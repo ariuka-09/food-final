@@ -2,15 +2,14 @@ import { AddFood } from "../_features/AddFood";
 import axios from "axios";
 import { Food, FoodCategory } from "@/lib/types";
 import { FoodcardForAdmin } from "../_features/FoodCardForAdmin";
+import { API_URI } from "@/lib/utils";
 
 export async function GetFood() {
   const foodCategories = await axios.get<FoodCategory[]>(
-    "https://food-delivery-backend-roan-three.vercel.app/foodCategory"
+    `${API_URI}/foodCategory`
   );
 
-  const foods = await axios.get<Food[]>(
-    "https://food-delivery-backend-roan-three.vercel.app/food"
-  );
+  const foods = await axios.get<Food[]>(`${API_URI}/food`);
   console.log("foods", foods, "categories", foodCategories);
 
   return (
@@ -24,6 +23,7 @@ export async function GetFood() {
                 {categoryName}
               </div>
               <div className="flex flex-wrap gap-4">
+                <AddFood categories={categories} />
                 {foods.data.map((food) => {
                   const { foodName, category } = food;
 

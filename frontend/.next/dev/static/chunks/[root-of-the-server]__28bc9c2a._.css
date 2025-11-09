@@ -740,8 +740,17 @@
     border-width: 2px;
   }
 
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+
   .border-\[\#E4E4E7\] {
     border-color: #e4e4e7;
+  }
+
+  .border-\[\#EF4444\] {
+    border-color: #ef4444;
   }
 
   .border-black {

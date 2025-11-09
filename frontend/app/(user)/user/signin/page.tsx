@@ -1,4 +1,5 @@
 "use client";
+import { API_URI } from "@/lib/utils";
 import axios from "axios";
 import { Fullscreen } from "lucide-react";
 import { useState } from "react";
@@ -7,21 +8,15 @@ export default function LogInPage() {
   const logIn = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    console.log("the data", formData);
 
     const email = formData.get("email");
     const password = formData.get("password");
-    console.log(email, password);
     // const email = data.get('email')
     try {
-      const { data } = await axios.post(
-        "https://food-delivery-backend-roan-three.vercel.app/user/logIn",
-        {
-          email: email,
-          password: password,
-        }
-      );
-      console.log("data", data);
+      const { data } = await axios.post(`${API_URI}/user/logIn`, {
+        email: email,
+        password: password,
+      });
       const { token } = data;
       localStorage.setItem("token", token);
       window.location.href = "..";
@@ -31,7 +26,7 @@ export default function LogInPage() {
       //     console.log("working", response)
       //local storage ruu hadagaldag logic nemeh
     } catch (error) {
-      console.log("err0r", error);
+      console.log("error", error);
     }
   };
 

@@ -1,5 +1,6 @@
 import { Foodcard, Navbar } from "@/components/";
 import { Food, FoodCategory } from "@/lib/types";
+import { API_URI } from "@/lib/utils";
 import axios from "axios";
 import Image from "next/image";
 
@@ -9,12 +10,10 @@ export default async function Home() {
   // console.log(data);
 
   const foodCategories = await axios.get<FoodCategory[]>(
-    "https://food-delivery-backend-roan-three.vercel.app/foodCategory"
+    `${API_URI}/foodCategory`
   );
 
-  const foods = await axios.get<Food[]>(
-    "https://food-delivery-backend-roan-three.vercel.app/food"
-  );
+  const foods = await axios.get<Food[]>(`${API_URI}/food`);
 
   return (
     <div className="bg-[#404040]">

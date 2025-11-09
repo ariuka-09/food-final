@@ -6,8 +6,9 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 export const axiosInstance = axios.create({
-  baseURL: "https://food-delivery-backend-roan-three.vercel.app/",
+  baseURL: "https://food-final-backend.vercel.app/",
   // headers: {
   //   Authorization: `Bearer ${process.env.NEXT_PUBLIC_TMDB_API_TOKEN}`,
   // },
 });
+export const API_URI = "https://food-final-backend.vercel.app";

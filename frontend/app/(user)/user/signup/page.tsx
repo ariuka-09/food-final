@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { CreatePassword } from "./_components/CreatePassword";
 import { EnterEmail } from "./_components/EnterEmail";
+import { API_URI } from "@/lib/utils";
 
 export default function CreateUserPage() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -13,13 +14,10 @@ export default function CreateUserPage() {
     console.log("pass", password);
 
     try {
-      const data = await axios.post(
-        "https://food-delivery-backend-roan-three.vercel.app/user/signUp",
-        {
-          email: email,
-          password: password,
-        }
-      );
+      const data = await axios.post(`${API_URI}/user/signUp`, {
+        email: email,
+        password: password,
+      });
       console.log("data", data);
 
       window.location.replace("signin");

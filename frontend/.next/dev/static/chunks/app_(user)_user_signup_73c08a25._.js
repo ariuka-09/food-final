@@ -167,7 +167,7 @@ function EnterEmail(props) {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-#71717A font-4 font-normal",
-                        children: "Sign up to explore your favorite dishes."
+                        children: "Sign up to explore your favorite foods"
                     }, void 0, false, {
                         fileName: "[project]/app/(user)/user/signup/_components/EnterEmail.tsx",
                         lineNumber: 29,
@@ -251,7 +251,7 @@ function CreateUserPage() {
         console.log("current index", currentIndex);
         console.log("pass", password);
         try {
-            const data = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post("https://food-delivery-backend-roan-three.vercel.app/user/signUp", {
+            const data = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].post("https://food-final-backend.vercel.app/user/signUp", {
                 email: email,
                 password: password
             });
