@@ -1,0 +1,18 @@
+[00:00:01.521] Server  LOG      ✓ Ready in 1119ms
+[00:00:10.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.698] Server  LOG     currentIndex 0
+[00:00:21.310] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:26.732] Server  LOG     currentIndex 0
+[00:00:27.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:27.731] Browser LOG     currentIndex 0
+[00:00:27.731] Browser LOG     currentIndex 0
+[00:00:32.543] Browser LOG     email sherdenechimeg0225@gmail.com
+[00:00:35.293] Browser LOG     current index 1
+[00:00:35.293] Browser LOG     pass 123
+[00:00:35.293] Browser LOG     password created 123
+[00:00:36.405] Browser LOG     data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"email\":\"sherdenechimeg0225@gmail.com\",\"password\":\"123\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://food-delivery-backend-roan-three.vercel.app/user/signUp","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":"User successfully created","headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"25","content-type":"text/html; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:00:36.982] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:40.903] Browser LOG     the data {}
+[00:00:40.903] Browser LOG     sherdenechimeg0225@gmail.com 123
+[00:00:41.768] Browser LOG     data {"res":{"__v":0,"_id":"69109054214a046a3a415440","createdAt":"2025-11-09T13:00:04.555Z","email":"sherdenechimeg0225@gmail.com","orderedFoods":[],"password":"$2b$10$iPCV3cx2g4ES8RFt2o0uIOO18m274M63w4UxwaPA0F8FKEFx8jTSu","role":"user","updatedAt":"2025-11-09T13:00:04.555Z"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTEwOTA1NDIxNGEwNDZhM2E0MTU0NDAiLCJlbWFpbCI6InNoZXJkZW5lY2hpbWVnMDIyNUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRpUENWM2N4Mmc0RVM4UkZ0Mm8wdUlPTzE4bTI3NE02M3c0VXh3YVBBMEY4RktFRng4alRTdSIsInJvbGUiOiJ1c2VyIiwib3JkZXJlZEZvb2RzIjpbXSwiY3JlYXRlZEF0IjoiMjAyNS0xMS0wOVQxMzowMDowNC41NTVaIiwidXBkYXRlZEF0IjoiMjAyNS0xMS0wOVQxMzowMDowNC41NTVaIiwiX192IjowLCJpYXQiOjE3NjI2OTMyMDksImV4cCI6MTc2MjY5NjgwOX0.9exuHIGj7cMVaIN7BU2juGx4I9ZEtrQuzAcoxCd1YBg"}
+[00:00:43.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
