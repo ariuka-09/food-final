@@ -1,11 +1,12 @@
 "use client";
-import axios from "axios";
 import { useState } from "react";
 import { CreatePassword } from "./_components/CreatePassword";
 import { EnterEmail } from "./_components/EnterEmail";
-import { API_URI } from "@/lib/utils";
+import {  axiosInstance } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export default function CreateUserPage() {
+  const router = useRouter()
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const [email, setEmail] = useState("");
@@ -14,13 +15,13 @@ export default function CreateUserPage() {
     console.log("pass", password);
 
     try {
-      const data = await axios.post(`${API_URI}/user/signUp`, {
+      const data = await axiosInstance.post(`/user/signUp`, {
         email: email,
         password: password,
       });
       console.log("data", data);
-
-      window.location.replace("signin");
+      router.push('signin')
+      // window.location.replace("signin");
     } catch (error) {
       console.log("err0r", error);
     }

@@ -12,11 +12,11 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { API_URI } from "@/lib/utils";
-import axios from "axios";
-import { useState } from "react";
+import { axiosInstance } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export function AddCategory() {
+  const router = useRouter()
   const AddNewCategory = async (
     event: React.SyntheticEvent<HTMLFormElement>
   ) => {
@@ -24,10 +24,11 @@ export function AddCategory() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const categoryName = formData.get("categoryName");
-    const data = await axios.post(`${API_URI}/foodCategory`, { categoryName });
+    const data = await axiosInstance.post(`/foodCategory`, { categoryName });
 
     console.log("category data", data);
-    window.location.href = "";
+    router.refresh()
+    // window.location.href = "";
   };
 
   return (

@@ -1,10 +1,10 @@
 "use client";
-import { API_URI } from "@/lib/utils";
-import axios from "axios";
-import { Fullscreen } from "lucide-react";
-import { useState } from "react";
+import {  axiosInstance } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export default function LogInPage() {
+      const router = useRouter()
+
   const logIn = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -13,18 +13,15 @@ export default function LogInPage() {
     const password = formData.get("password");
     // const email = data.get('email')
     try {
-      const { data } = await axios.post(`${API_URI}/user/logIn`, {
+      const { data } = await axiosInstance.post(`/user/logIn`, {
         email: email,
         password: password,
       });
       const { token } = data;
       localStorage.setItem("token", token);
-      window.location.href = "..";
+      router.push('/')
+      // window.location.href = "..";
 
-      //   window.location.href="."
-      // const response =  await axios.post("http://localhost:5000/user/logIn", {email:email, password:password})
-      //     console.log("working", response)
-      //local storage ruu hadagaldag logic nemeh
     } catch (error) {
       console.log("error", error);
     }

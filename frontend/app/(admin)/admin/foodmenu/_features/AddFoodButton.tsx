@@ -12,11 +12,11 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { API_URI } from "@/lib/utils";
-import axios from "axios";
-import { useState } from "react";
+import {  axiosInstance } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export function AddFoodButton(props: { category: string }) {
+  const router = useRouter()
   const { category } = props;
   const AddNewFood = async (
     event: React.SyntheticEvent<HTMLFormElement>
@@ -30,14 +30,15 @@ export function AddFoodButton(props: { category: string }) {
     const image = formData.get("image")?.toString();
 
     try {
-      const data = await axios.post(`${API_URI}/food/create`, {
+      const data = await axiosInstance.post(`/food/create`, {
         foodName: foodName,
         price: price,
         ingredients: ingredients,
         category: category,
       });
       console.log("category data", data);
-      window.location.replace("")
+      router.refresh()
+      // window.location.replace("")
     } catch (error) {
       
     }

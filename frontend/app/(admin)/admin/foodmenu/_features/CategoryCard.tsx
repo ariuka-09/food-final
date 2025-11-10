@@ -11,32 +11,18 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import axios from "axios";
-import { API_URI } from "@/lib/utils";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuGroup,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuPortal,
-    DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubContent,
-    DropdownMenuSubTrigger,
-    DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+import { axiosInstance } from "@/lib/utils";
+import { useRouter } from "next/navigation";
+
 
 export function CategoryCard (props:{Category:FoodCategory}){
+    const router = useRouter()
     const {Category} = props;
     const deleteCategory = async ()=>{
         try {
-        await axios.delete(`${API_URI}/foodCategory/${Category._id}`)
+        await axiosInstance.delete(`/foodCategory/${Category._id}`)
             console.log({message:`${Category.categoryName} was deleted`});
-            window.location.href=""
+            router.refresh()
             
         } catch (error) {
             console.error({message:`${Category.categoryName} was NOT deleted`, error:error})

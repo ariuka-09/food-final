@@ -1,15 +1,14 @@
 import { AddFood } from "../_features/AddFood";
-import axios from "axios";
 import { Food, FoodCategory } from "@/lib/types";
 import { FoodcardForAdmin } from "../_features/FoodCardForAdmin";
-import { API_URI } from "@/lib/utils";
+import { axiosInstance } from "@/lib/utils";
 
 export async function GetFood() {
-  const foodCategories = await axios.get<FoodCategory[]>(
-    `${API_URI}/foodCategory`
+  const foodCategories = await axiosInstance.get<FoodCategory[]>(
+    `/foodCategory`
   );
 
-  const foods = await axios.get<Food[]>(`${API_URI}/food`);
+  const foods = await axiosInstance.get<Food[]>(`/food`);
   console.log("foods", foods, "categories", foodCategories);
 
   return (

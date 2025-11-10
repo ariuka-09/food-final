@@ -2,7 +2,7 @@ import { Food } from "@/lib/types";
 import { Edit } from "../_icons/Edit";
 
 export const FoodcardForAdmin = (props: { Food: Food }) => {
-  const { foodName, price, ingredients, image } = props.Food;
+  const { foodName, price, ingredients, image, _id } = props.Food;
   return (
     <div className="p-4 w-[239px] h-[209px] bg-white rounded-[20px] border-[#E4E4E7] border">
       <div className="h-[60%] relative">
@@ -12,7 +12,7 @@ export const FoodcardForAdmin = (props: { Food: Food }) => {
           alt=""
         />
         <button className="absolute right-2 bottom-2">
-          <Edit />
+          <Edit Food = {props.Food} />
         </button>
         {/* the adding logic will be done here  */}
       </div>
