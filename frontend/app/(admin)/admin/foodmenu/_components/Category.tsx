@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { AddCategory } from "../_features/AddCategory";
+import { CategoryCard } from "../_features/CategoryCard";
 
 export function Category(props: {
   Categories: { categoryName: string; _id: string }[];
@@ -24,14 +25,7 @@ export function Category(props: {
       <div className="flex gap-3 flex-wrap w-fit">
         {Categories.map((Category) => {
           return (
-            <div className="py-2 px-4 rounded-full border-2 border-[#E4E4E7] flex gap-2 items-center ">
-              <p className="text-[14px] font-medium ">
-                {Category.categoryName}
-              </p>
-              <div className="px-2.5 py-0.5 bg-black text-white rounded-full">
-                10
-              </div>
-            </div>
+            <CategoryCard key={Category._id} Category={Category}/>
           );
         })}
         <AddCategory />

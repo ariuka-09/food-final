@@ -1,12 +1,215 @@
-[00:00:00.697] Server  LOG      ✓ Ready in 508ms
-[00:00:03.192] Server  LOG     test [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}]
-[00:00:03.236] Server  ERROR   Each child in a list should have a unique "key" prop.
+[00:00:00.821] Server  LOG      ✓ Ready in 599ms
+[00:00:04.126] Server  LOG     test [{...},{...},{...},{...}]
+[00:00:04.384] Server  ERROR    ⨯ ReferenceError: Category is not defined
+[00:00:04.641] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.170] Server  LOG     foods {} "categories" {}
+[00:00:05.378] Browser ERROR   uncaughtError: ReferenceError: Category is not defined
+[00:00:13.844] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:13.844] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./app/(admin)/admin/foodmenu/_features/CategoryCard.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:00:13.847] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:13.869] Server  LOG      ✓ Compiled in 63ms
+[00:00:14.688] Server  LOG     test [{...},{...},{...},{...}]
+[00:00:15.702] Server  LOG     foods {} "categories" {}
+[00:00:15.997] Server  LOG     test [{...},{...},{...},{...}]
+[00:00:17.014] Server  LOG     foods {} "categories" {}
+[00:00:17.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.605] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
-[00:00:04.296] Server  LOG     foods {} "categories" {}
-[00:00:04.350] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
-[00:00:04.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.816] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Check the render method of `div`.  It was passed a child from Category.
-[00:00:04.820] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <MenuProvider scope={{Menu:[...], ...}} open={false} onOpenChange={function useCallbackRef.useMemo} content={null} ...>
+      <MenuProvider scope={{Menu:[...], ...}} onClose={function Menu.useCallback} isUsingKeyboardRef={{current:false}} ...>
+        <DropdownMenuTrigger asChild={true}>
+          <DropdownMenuTrigger data-slot="dropdown-m..." asChild={true}>
+            <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
+              <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
+                <Primitive.div asChild={true} ref={function}>
+                  <Primitive.div.Slot ref={function}>
+                    <Primitive.div.SlotClone ref={function}>
+                      <Primitive.button type="button" id="radix-_R_1..." aria-haspopup="menu" aria-expanded={false} ...>
+                        <Primitive.button.Slot type="button" id="radix-_R_1..." aria-haspopup="menu" ...>
+                          <Primitive.button.SlotClone type="button" id="radix-_R_1..." aria-haspopup="menu" ...>
+                            <Button variant="outline" type="button" id="radix-_R_1..." aria-haspopup="menu" ...>
+                              <button
+                                data-slot="dropdown-menu-trigger"
+                                className={"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-m..."}
+                                type="button"
++                               id="radix-_R_1j5esnebn5rlb_"
+-                               id="radix-_R_5j5esnebn5rlb_"
+                                aria-haspopup="menu"
+                                aria-expanded={false}
+                                aria-controls={undefined}
+                                data-state="closed"
+                                data-disabled={undefined}
+                                disabled={false}
+                                onPointerDown={function handleEvent}
+                                onKeyDown={function handleEvent}
+                                ref={function}
+                              >
++                               Open
+        ...
+
+[00:00:51.920] Server  LOG      ✓ Compiled in 71ms
+[00:00:57.345] Server  LOG      ✓ Compiled in 59ms
+[00:01:00.514] Server  LOG      ✓ Compiled in 36ms
+[00:01:09.877] Server  LOG      ✓ Compiled in 53ms
+[00:01:18.452] Server  LOG      ✓ Compiled in 56ms
+[00:01:20.361] Server  LOG      ✓ Compiled in 22ms
+[00:01:31.262] Server  LOG      ✓ Compiled in 41ms
+[00:01:40.140] Server  LOG      ✓ Compiled in 15ms
+[00:02:09.632] Server  LOG      ✓ Compiled in 62ms
+[00:02:35.391] Server  LOG      ✓ Compiled in 54ms
+[00:02:41.042] Server  LOG      ✓ Compiled in 18ms
+[00:03:02.069] Server  LOG      ✓ Compiled in 32ms
+[00:03:49.913] Server  LOG      ✓ Compiled in 81ms
+[00:04:19.760] Server  LOG      ✓ Compiled in 32ms
+[00:04:19.866] Browser ERROR   uncaughtError: Error: `DialogTrigger` must be used within `Dialog`
+[00:04:31.893] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:31.932] Server  LOG      ✓ Compiled in 54ms
+[00:04:32.930] Server  LOG     test [{...},{...},{...},{...}]
+[00:04:33.978] Server  LOG     foods {} "categories" {}
+[00:04:34.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:26.302] Server  LOG      ✓ Compiled in 38ms
+[00:06:16.973] Server  LOG      ✓ Compiled in 49ms
+[00:06:17.092] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/CategoryCard.tsx:45:11
+Parsing ecmascript source code failed
+  43 |         }
+  44 |     }
+> 45 |     return(
+     |           ^
+> 46 |         
+     | ^^^^^^^^
+> 47 |     )
+     | ^^^^^^
+  48 | }
+  49 |
+  50 |
+
+Parenthesized expression cannot be empty
+
+Import trace:
+  Server Component:
+    ./app/(admin)/admin/foodmenu/_features/CategoryCard.tsx
+    ./app/(admin)/admin/foodmenu/_components/Category.tsx
+    ./app/(admin)/admin/foodmenu/page.tsx
+[00:06:29.183] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/CategoryCard.tsx:45:11
+Parsing ecmascript source code failed
+  43 |         }
+  44 |     }
+> 45 |     return(
+     |           ^
+> 46 | //         {/* <Dialog>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 47 | // <DialogTrigger asChild>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 48 | // <Button className="py-2 px-4 rounded-full border-2 border-[#E4E4E7] h-11 flex gap-2 items-center " >
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 49 | //         <p className="text-[14px] font-medium ">
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 50 | //         {Category.categoryName}
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 51 | //         </p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 52 | //         <div className="px-2.5 py-0.5 bg-black text-white rounded-full">
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 53 | //         10
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 54 | //         </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 55 | //     </Button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 56 | // </DialogTrigger>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 57 | // <DialogContent className="sm:max-w-[425px]">
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 58 | //     <DialogHeader>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 59 | //     <DialogTitle>Delete Category</DialogTitle>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 60 | //     <DialogDescription>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 61 | //         This category will be deleted along with the foods that belong to it
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 62 | //     </DialogDescription>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 63 | //     </DialogHeader>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 64 | //     <DialogFooter>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 65 | //     <DialogClose asChild>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 66 | //         <Button variant="outline">Cancel</Button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 67 | //     </DialogClose>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 68 | //     <DialogClose asChild>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 69 | //         <Button onClick={deleteCategory}>Confirm Deletion</Button>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 70 | //     </DialogClose>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 71 | //     </DialogFooter>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 72 | // </DialogContent>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 73 |
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 74 | // </Dialog> */}
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+> 75 |     )
+     | ^^^^^^
+  76 | }
+  77 |
+  78 |
+
+Parenthesized expression cannot be empty
+
+Import trace:
+  Server Component:
+    ./app/(admin)/admin/foodmenu/_features/CategoryCard.tsx
+    ./app/(admin)/admin/foodmenu/_components/Category.tsx
+    ./app/(admin)/admin/foodmenu/page.tsx
+[00:06:38.046] Server  LOG     test [{...},{...},{...},{...}]
+[00:06:39.083] Server  LOG     foods {} "categories" {}
+[00:06:41.674] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:41.674] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:43.540] Browser LOG     working
+[00:06:44.592] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"categoryName\":\"test\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://food-final-backend.vercel.app/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:06:45.343] Server  LOG     test [{...},{...},{...},{...},{...}]
+[00:06:46.481] Server  LOG     foods {} "categories" {}
+[00:06:46.760] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:49.014] Browser LOG     {"message":"test was deleted"}
+[00:06:49.639] Server  LOG     test [{...},{...},{...},{...}]
+[00:06:50.679] Server  LOG     foods {} "categories" {}
+[00:06:50.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:15.149] Server  LOG     test [{...},{...},{...},{...}]
+[00:09:16.177] Server  LOG     foods {} "categories" {}
+[00:09:16.321] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:35.170] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:49.708] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:09:49.708] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:09:53.793] Browser LOG     working
+[00:09:54.690] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"categoryName\":\"Beverage\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://food-final-backend.vercel.app/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:09:55.494] Server  LOG     test [{...},{...},{...},{...},{...}]
+[00:09:56.524] Server  LOG     foods {} "categories" {}
+[00:09:56.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:02.141] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:08.393] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:10:08.393] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:10:33.761] Browser LOG     working 69022aa4985586649c50afac
+[00:10:34.848] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"foodName\":\"ceaser\",\"price\":\"12999\",\"ingredients\":\"lot of vegetable\",\"category\":\"69022aa4985586649c50afac\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://food-final-backend.vercel.app/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69114c0427e0b76bdd214395","category":"69022aa4985586649c50afac","createdAt":"2025-11-10T02:20:52.868Z","foodName":"ceaser","ingredients":"lot of vegetable","price":12999,"updatedAt":"2025-11-10T02:20:52.868Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"272","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
+[00:10:35.563] Server  LOG     test [{...},{...},{...},{...},{...}]
+[00:10:36.626] Server  LOG     foods {} "categories" {}
+[00:10:36.653] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
+[00:10:36.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:36.884] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:10:40.886] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

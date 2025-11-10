@@ -18,24 +18,30 @@ import { useState } from "react";
 
 export function AddFoodButton(props: { category: string }) {
   const { category } = props;
-  const AddNewCategory = async (
+  const AddNewFood = async (
     event: React.SyntheticEvent<HTMLFormElement>
   ) => {
-    console.log("working");
+    console.log("working", category);
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    const foodName = formData.get("foodName");
-    const foodPrice = formData.get("foodPrice");
-    const ingredients = formData.get("ingredients");
-    const image = formData.get("image");
+    const foodName = formData.get("foodName")?.toString();
+    const price = formData.get("foodPrice")?.toString();
+    const ingredients = formData.get("ingredients")?.toString();
+    const image = formData.get("image")?.toString();
 
-    const data = await axios.post(`${API_URI}/food/create`, {
-      foodName: foodName,
-      foodPrice: foodPrice,
-      ingredients: ingredients,
-      category: category,
-    });
-    console.log("category data", data);
+    try {
+      const data = await axios.post(`${API_URI}/food/create`, {
+        foodName: foodName,
+        price: price,
+        ingredients: ingredients,
+        category: category,
+      });
+      console.log("category data", data);
+      window.location.replace("")
+    } catch (error) {
+      
+    }
+
   };
 
   return (
@@ -52,7 +58,7 @@ export function AddFoodButton(props: { category: string }) {
         <DialogHeader>
           <DialogTitle>Add a new category</DialogTitle>
         </DialogHeader>
-        <form onSubmit={AddNewCategory}>
+        <form onSubmit={AddNewFood}>
           <div className="grid gap-4">
             <div className="grid gap-3">
               <Label htmlFor="foodName">Food name</Label>
