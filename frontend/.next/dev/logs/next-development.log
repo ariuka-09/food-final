@@ -1,60 +1,12 @@
-[00:00:00.745] Server  LOG      ✓ Ready in 552ms
-[00:00:02.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:03.389] Server  LOG     test [{...},{...},{...},{...}]
-[00:00:04.546] Server  LOG     foods {} "categories" {}
-[00:00:04.660] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
-[00:00:04.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.716] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:00:08.055] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:00:08.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:10.496] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:01:10.834] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:13.552] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:04:13.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:35.613] Server  LOG     currentIndex 0
-[00:05:35.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:36.004] Browser LOG     currentIndex 0
-[00:05:36.004] Browser LOG     currentIndex 0
-[00:05:38.363] Browser LOG     email ar
-[00:05:41.696] Browser LOG     current index 1
-[00:05:41.696] Browser LOG     pass 123123
-[00:05:41.696] Browser LOG     password created 123123
-[00:05:45.720] Browser LOG     data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"email\":\"ar\",\"password\":\"123123\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/user/signUp","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":"User successfully created","headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"25","content-type":"text/html; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:05:57.569] Browser ERROR   unhandledRejection: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:05:57.868] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:08.924] Server  LOG      ✓ Compiled in 104ms
-[00:06:13.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:43.792] Server  LOG      ✓ Compiled in 50ms
-[00:06:46.237] Server  LOG      ✓ Compiled in 77ms
-[00:06:51.464] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:59.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:00.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:36.760] Server  LOG     test [{...},{...},{...},{...}]
-[00:13:37.995] Server  LOG     foods {} "categories" {}
-[00:13:38.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:13:38.371] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:13:46.712] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:46.712] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:48.846] Browser LOG     working
-[00:13:49.961] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"test\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:13:50.577] Server  LOG     test [{...},{...},{...},{...},{...}]
-[00:13:51.707] Server  LOG     foods {} "categories" {}
-[00:13:58.047] Browser LOG     {"message":"test was deleted"}
-[00:13:58.628] Server  LOG     test [{...},{...},{...},{...}]
-[00:13:59.803] Server  LOG     foods {} "categories" {}
+[00:00:01.212] Server  LOG      ✓ Ready in 887ms
+[00:00:06.381] Server  LOG     test [{...},{...},{...},{...}]
+[00:00:07.476] Server  LOG     foods {} "categories" {}
+[00:00:07.527] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
+[00:00:07.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.206] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:01:10.148] Server  LOG      ✓ Compiled in 41ms
+[00:01:17.179] Browser ERROR   unhandledRejection: AxiosError: Network Error
+[00:01:17.677] Server  LOG     test [{...},{...},{...},{...}]
+[00:01:18.763] Server  LOG     foods {} "categories" {}
+[00:01:19.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:19.460] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath

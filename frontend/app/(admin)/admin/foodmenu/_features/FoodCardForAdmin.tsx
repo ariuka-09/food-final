@@ -1,5 +1,5 @@
 import { Food } from "@/lib/types";
-import { Edit } from "../_icons/Edit";
+import { Edit } from "./Edit";
 
 export const FoodcardForAdmin = (props: { Food: Food }) => {
   const { foodName, price, ingredients, image, _id } = props.Food;
@@ -12,7 +12,7 @@ export const FoodcardForAdmin = (props: { Food: Food }) => {
           alt=""
         />
         <button className="absolute right-2 bottom-2">
-          <Edit Food = {props.Food} />
+          <Edit Food={props.Food} />
         </button>
         {/* the adding logic will be done here  */}
       </div>
