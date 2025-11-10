@@ -8,6 +8,7 @@ export const createFood = async (req, res) => {
       foodName: foodName,
       price: price,
       ingredients: ingredients,
+      category:category,
     });
     res.status(201).send({ message: "food successfully created", data: food });
   } catch (error) {

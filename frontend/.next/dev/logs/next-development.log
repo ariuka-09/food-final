@@ -1,25 +1,12 @@
-[00:00:01.101] Server  LOG      ✓ Ready in 741ms
-[00:00:04.230] Server  LOG     test [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}]
-[00:00:04.267] Server  ERROR   Each child in a list should have a unique "key" prop.
+[00:00:00.697] Server  LOG      ✓ Ready in 508ms
+[00:00:03.192] Server  LOG     test [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}]
+[00:00:03.236] Server  ERROR   Each child in a list should have a unique "key" prop.
 
 Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
-[00:00:04.488] Server  LOG     test [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}]
-[00:00:04.495] Server  ERROR   Each child in a list should have a unique "key" prop.
-
-Check the top-level render call using <div>. See https://react.dev/link/warning-keys for more information.
-[00:00:05.457] Server  LOG     foods {} "categories" {}
-[00:00:05.520] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
-[00:00:05.520] Server  ERROR   Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
-[00:00:05.521] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
-[00:00:05.522] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
-[00:00:05.600] Server  LOG     foods {} "categories" {}
-[00:00:05.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.312] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:04.296] Server  LOG     foods {} "categories" {}
+[00:00:04.350] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
+[00:00:04.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.816] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `div`.  It was passed a child from Category.
-[00:00:06.313] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-width strokeWidth
-[00:00:06.313] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
-[00:00:06.313] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
-[00:00:06.313] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:01:02.155] Server  LOG     test [{...},{...},{...},{...},{...},{...},{...},{...},{...},{...}]
-[00:01:03.266] Server  LOG     foods {} "categories" {}
+[00:00:04.820] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
