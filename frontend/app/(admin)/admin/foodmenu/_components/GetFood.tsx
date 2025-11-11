@@ -24,7 +24,7 @@ export async function GetFood() {
               <div className="flex flex-wrap gap-4">
                 <AddFood category={category} />
                 {foods && foods.map((food) => {
-                  return <FoodcardForAdmin key={food._id}  Food={food}/>;
+                  return <FoodcardForAdmin key={food._id}  Food={food} categories={categories}/>;
                   // if (_id == category._id) {
                   //   return <FoodcardForAdmin key={food._id} Food={food} />;
                   // }

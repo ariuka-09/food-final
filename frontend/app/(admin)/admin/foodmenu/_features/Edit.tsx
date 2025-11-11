@@ -24,9 +24,10 @@ import {
 } from "@/components/ui/select"
 import { Category } from "@/lib/types";
 
-export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string} }) {
+export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, categories }) {
   const router = useRouter()
   const { foodName, price, ingredients, image, _id, category, } = props.Food;
+  const {categories} = props
   console.log("populated category", category);
 
   
@@ -106,9 +107,9 @@ export function Edit(props: { Food:  {foodName:string, price:number, ingredients
                     <SelectValue  defaultValue="main"  />
                   </SelectTrigger>
                   <SelectContent>
-                    {/* {categories.map((category)=>{
-                      return(<SelectItem value='axa' >Light</SelectItem>)
-                    })} */}
+                    {categories.map((category)=>{
+                      return(<SelectItem value={category.name} >{category.name} </SelectItem>)
+                    })}
                     {/* <SelectItem value="light">Light</SelectItem>
                     <SelectItem value="dark">Dark</SelectItem>
                     <SelectItem value="system">System</SelectItem> */}
