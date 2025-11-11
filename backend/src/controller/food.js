@@ -35,7 +35,7 @@ export const updateFood = async (req, res) => {
     await Food.findByIdAndUpdate(id, body);
     res.status(200).send("updated successfully");
   } catch (error) {
-    res.status(500).send("wasnt updated", error);
+    res.status(500).send({message:"wasnt updated", error:error});
   }
 };
 export const deleteFood = async (req, res) => {
