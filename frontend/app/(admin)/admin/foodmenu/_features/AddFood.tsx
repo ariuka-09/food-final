@@ -1,7 +1,7 @@
-import { FoodCategory } from "@/lib/types";
+import { Category } from "@/lib/types";
 import { AddFoodButton } from "./AddFoodButton";
 
-export function AddFood(props: { categories: FoodCategory }) {
+export function AddFood(props: { categories: Category }) {
   const { categories } = props;
 
   return (

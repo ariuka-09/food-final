@@ -1,4 +1,4 @@
-export type FoodCategory = { _id: string; categoryName: string };
+export type Category = { _id: string; categoryName: string };
 export type Food = {
   _id: string;
   foodName: string;

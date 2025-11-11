@@ -1,11 +1,11 @@
 import { AddFood } from "../_features/AddFood";
-import { Food, FoodCategory } from "@/lib/types";
+import { Food, Category } from "@/lib/types";
 import { FoodcardForAdmin } from "../_features/FoodCardForAdmin";
 import { axiosInstance } from "@/lib/utils";
 
 export async function GetFood() {
-  const foodCategories = await axiosInstance.get<FoodCategory[]>(
-    `/foodCategory`
+  const foodCategories = await axiosInstance.get<Category[]>(
+    `/category`
   );
 
   const foods = await axiosInstance.get<Food[]>(`/food`);
@@ -26,7 +26,7 @@ export async function GetFood() {
                 {foods.data.map((food) => {
                   const { foodName, category } = food;
 
-                  if (_id == category) {
+                  if (_id == category._id) {
                     return <FoodcardForAdmin key={food._id} Food={food} />;
                   }
                 })}

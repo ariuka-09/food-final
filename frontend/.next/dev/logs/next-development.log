@@ -1,79 +1,53 @@
-[00:00:00.693] Server  LOG      ✓ Ready in 505ms
-[00:00:03.364] Server  LOG     test [{...},{...},{...},{...}]
-[00:00:04.469] Server  LOG     foods {} "categories" {}
-[00:00:04.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.776] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <AdminPage>
-      <div className="bg-[#F4F4F...">
-        ...
-          <CategoryCard Category={{_id:"69022...", ...}}>
-            <Dialog>
-              <Dialog data-slot="dialog">
-                <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                  <DialogTrigger asChild={true}>
-                    <DialogTrigger data-slot="dialog-tri..." asChild={true}>
-                      <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                        <Primitive.button.Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Primitive.button.SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                            <Button className={"py-2 px-..."} type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <button
-                                data-slot="dialog-trigger"
-                                className={"justify-center whitespace-nowrap text-sm font-medium transition-all disab..."}
-                                type="button"
-                                aria-haspopup="dialog"
-                                aria-expanded={false}
-+                               aria-controls="radix-_R_1j5esnebn5rlb_"
--                               aria-controls="radix-_R_5j5esnebn5rlb_"
-                                data-state="closed"
-                                onClick={function handleEvent}
-                                ref={function}
-                              >
-                  ...
-          ...
-        ...
-
-[00:07:50.825] Server  LOG     test []
-[00:07:51.886] Server  LOG     foods {} "categories" {}
-[00:07:52.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:54.226] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:07:54.226] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:02.116] Browser LOG     working
-[00:08:03.234] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Main course\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:08:03.911] Server  LOG     test [{...}]
-[00:08:05.053] Server  LOG     foods {} "categories" {}
-[00:08:06.466] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:06.466] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:26.878] Browser LOG     working
-[00:08:27.866] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Dessert\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:08:28.479] Server  LOG     test [{...},{...}]
-[00:08:29.497] Server  LOG     foods {} "categories" {}
-[00:08:31.050] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:31.050] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:35.848] Browser LOG     working
-[00:08:36.774] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Soup\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:08:37.379] Server  LOG     test [{...},{...},{...}]
-[00:08:38.403] Server  LOG     foods {} "categories" {}
-[00:08:44.258] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:44.258] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:49.117] Browser LOG     working
-[00:08:50.108] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Appetizer\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/foodCategory","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:08:50.740] Server  LOG     test [{...},{...},{...},{...}]
-[00:08:51.757] Server  LOG     foods {} "categories" {}
-[00:08:54.141] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:08:54.141] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:09:07.246] Browser LOG     working 6912991e4afa2029d145922b
-[00:09:08.206] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"steak\",\"price\":\"69999\",\"ingredients\":\"beef\",\"category\":\"6912991e4afa2029d145922b\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"6912995f4afa2029d145923f","category":"6912991e4afa2029d145922b","createdAt":"2025-11-11T02:03:11.012Z","foodName":"steak","ingredients":"beef","price":69999,"updatedAt":"2025-11-11T02:03:11.012Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"259","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
-[00:09:08.835] Server  LOG     test [{...},{...},{...},{...}]
-[00:09:09.886] Server  LOG     foods {} "categories" {}
+[00:00:00.895] Server  LOG      ✓ Ready in 668ms
+[00:00:03.365] Server  LOG     test []
+[00:00:04.607] Server  LOG     foods {} "categories" {}
+[00:00:04.994] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:44.857] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:44.858] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:48.121] Browser LOG     working
+[00:00:49.340] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 404
+[00:02:31.033] Server  LOG      ✓ Compiled in 75ms
+[00:02:51.820] Server  LOG      ✓ Compiled in 82ms
+[00:03:11.983] Server  LOG     test []
+[00:03:12.668] Server  ERROR    ⨯ AxiosError: Request failed with status code 404
+[00:03:12.817] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 404
+[00:03:25.835] Server  LOG     test []
+[00:03:27.562] Server  LOG     foods {} "categories" {}
+[00:03:27.898] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:29.854] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:03:29.854] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:03:33.581] Browser LOG     working
+[00:03:34.524] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Main course\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/category","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:03:35.224] Server  LOG     test [{...}]
+[00:03:36.460] Server  LOG     foods {} "categories" {}
+[00:03:48.117] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:03:48.117] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:03:54.039] Browser LOG     working 69129c42c25cf7822183796f
+[00:03:55.042] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"steak\",\"price\":\"69999\",\"ingredients\":\"beef\",\"category\":\"69129c42c25cf7822183796f\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69129c56c25cf78221837976","category":"69129c42c25cf7822183796f","createdAt":"2025-11-11T02:15:50.665Z","foodName":"steak","ingredients":"beef","price":69999,"updatedAt":"2025-11-11T02:15:50.665Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"259","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
+[00:03:55.693] Server  LOG     test [{...}]
+[00:03:57.052] Server  LOG     foods {} "categories" {}
+[00:04:01.145] Server  LOG     test [{...}]
+[00:04:02.390] Server  LOG     foods {} "categories" {}
+[00:04:02.639] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:43.644] Server  LOG     test [{...}]
+[00:04:44.742] Server  LOG     foods {} "categories" {}
+[00:04:45.042] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:45.753] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:04:45.754] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:04:49.952] Browser LOG     working 69129c42c25cf7822183796f
+[00:04:51.093] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"steak\",\"price\":\"69999\",\"ingredients\":\"beef\",\"category\":\"69129c42c25cf7822183796f\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69129c8ec25cf78221837983","category":"69129c42c25cf7822183796f","createdAt":"2025-11-11T02:16:46.483Z","foodName":"steak","ingredients":"beef","price":69999,"updatedAt":"2025-11-11T02:16:46.483Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"259","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
+[00:04:51.664] Server  LOG     test [{...}]
+[00:04:52.870] Server  LOG     foods {} "categories" {}
+[00:06:24.891] Server  LOG     test [{...}]
+[00:06:26.113] Server  LOG     foods {} "categories" {}
+[00:08:14.661] Server  LOG      ✓ Compiled in 21ms
+[00:08:44.292] Server  LOG     test [{...}]
+[00:08:45.509] Server  LOG     foods {} "categories" {}
+[00:08:45.517] Server  ERROR    ⨯ ReferenceError: category is not defined
+[00:08:45.970] Browser ERROR   uncaughtError: ReferenceError: category is not defined
+[00:08:46.817] Server  LOG     test [{...}]
+[00:08:48.064] Server  LOG     foods {} "categories" {}
+[00:08:48.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:19.067] Server  LOG     test [{...}]
+[00:09:20.518] Server  LOG     foods {} "categories" {}
+[00:09:20.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

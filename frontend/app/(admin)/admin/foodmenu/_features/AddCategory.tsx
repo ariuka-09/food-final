@@ -4,7 +4,6 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -24,7 +23,7 @@ export function AddCategory() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const categoryName = formData.get("categoryName");
-    const data = await axiosInstance.post(`/foodCategory`, { categoryName });
+    const data = await axiosInstance.post(`/category`, { categoryName });
 
     console.log("category data", data);
     router.refresh()

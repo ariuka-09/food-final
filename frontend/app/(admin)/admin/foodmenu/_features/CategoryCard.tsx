@@ -1,5 +1,5 @@
 'use client'
-import { FoodCategory } from "@/lib/types";
+import { Category } from "@/lib/types";
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -15,12 +15,12 @@ import { axiosInstance } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 
 
-export function CategoryCard (props:{Category:FoodCategory}){
+export function CategoryCard (props:{Category:Category}){
     const router = useRouter()
     const {Category} = props;
     const deleteCategory = async ()=>{
         try {
-        await axiosInstance.delete(`/foodCategory/${Category._id}`)
+        await axiosInstance.delete(`/category/${Category._id}`)
             console.log({message:`${Category.categoryName} was deleted`});
             router.refresh()
             
