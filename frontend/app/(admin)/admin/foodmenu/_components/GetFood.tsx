@@ -8,14 +8,14 @@ export async function GetFood() {
     `/category`
   );
 
-  const foods = await axiosInstance.get<Food[]>(`/food`);
-  console.log("foods", foods, "categories", foodCategories);
+  // const foods = await axiosInstance.get<Food[]>(`/food`);
+  // console.log("foods", foods, "categories", foodCategories);
 
   return (
     <div className="bg-[#ffffff] rounded-[20px] p-5">
       <div className="flex flex-col gap-10">
         {foodCategories.data.map((categories) => {
-          const { _id, categoryName } = categories;
+          const { _id, categoryName, foods } = categories;
           return (
             <div className="" key={_id}>
               <div className="text-black text-[20px] font-semibold">
@@ -23,12 +23,12 @@ export async function GetFood() {
               </div>
               <div className="flex flex-wrap gap-4">
                 <AddFood categories={categories} />
-                {foods.data.map((food) => {
+                {foods.map((food) => {
                   const { foodName, category } = food;
-
-                  if (_id == category._id) {
-                    return <FoodcardForAdmin key={food._id} Food={food} />;
-                  }
+                  return <FoodcardForAdmin key={food._id} Food={food} />;
+                  // if (_id == category._id) {
+                  //   return <FoodcardForAdmin key={food._id} Food={food} />;
+                  // }
                 })}
               </div>
             </div>

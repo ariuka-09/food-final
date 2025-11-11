@@ -22,7 +22,9 @@ export function Edit(props: { Food: Food }) {
   const { foodName, price, ingredients, image, _id, category } = props.Food;
   const handleFoodEdit = async (
     event: React.SyntheticEvent<HTMLFormElement>
+  
   ) => {
+    event.preventDefault()
     const formData = new FormData(event.currentTarget);
     const foodName = formData.get("foodName");
     const price = formData.get("price");
