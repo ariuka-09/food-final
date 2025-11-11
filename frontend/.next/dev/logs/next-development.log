@@ -1,53 +1,37 @@
-[00:00:00.895] Server  LOG      ✓ Ready in 668ms
-[00:00:03.365] Server  LOG     test []
-[00:00:04.607] Server  LOG     foods {} "categories" {}
-[00:00:04.994] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:44.857] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:00:44.858] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:00:48.121] Browser LOG     working
-[00:00:49.340] Browser ERROR   unhandledRejection: AxiosError: Request failed with status code 404
-[00:02:31.033] Server  LOG      ✓ Compiled in 75ms
-[00:02:51.820] Server  LOG      ✓ Compiled in 82ms
-[00:03:11.983] Server  LOG     test []
-[00:03:12.668] Server  ERROR    ⨯ AxiosError: Request failed with status code 404
-[00:03:12.817] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 404
-[00:03:25.835] Server  LOG     test []
-[00:03:27.562] Server  LOG     foods {} "categories" {}
-[00:03:27.898] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:29.854] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:03:29.854] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:03:33.581] Browser LOG     working
-[00:03:34.524] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Main course\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/category","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:03:35.224] Server  LOG     test [{...}]
-[00:03:36.460] Server  LOG     foods {} "categories" {}
-[00:03:48.117] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:03:48.117] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:03:54.039] Browser LOG     working 69129c42c25cf7822183796f
-[00:03:55.042] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"steak\",\"price\":\"69999\",\"ingredients\":\"beef\",\"category\":\"69129c42c25cf7822183796f\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69129c56c25cf78221837976","category":"69129c42c25cf7822183796f","createdAt":"2025-11-11T02:15:50.665Z","foodName":"steak","ingredients":"beef","price":69999,"updatedAt":"2025-11-11T02:15:50.665Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"259","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
-[00:03:55.693] Server  LOG     test [{...}]
-[00:03:57.052] Server  LOG     foods {} "categories" {}
-[00:04:01.145] Server  LOG     test [{...}]
-[00:04:02.390] Server  LOG     foods {} "categories" {}
-[00:04:02.639] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:43.644] Server  LOG     test [{...}]
-[00:04:44.742] Server  LOG     foods {} "categories" {}
-[00:04:45.042] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:45.753] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:04:45.754] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:04:49.952] Browser LOG     working 69129c42c25cf7822183796f
-[00:04:51.093] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"steak\",\"price\":\"69999\",\"ingredients\":\"beef\",\"category\":\"69129c42c25cf7822183796f\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69129c8ec25cf78221837983","category":"69129c42c25cf7822183796f","createdAt":"2025-11-11T02:16:46.483Z","foodName":"steak","ingredients":"beef","price":69999,"updatedAt":"2025-11-11T02:16:46.483Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"259","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
-[00:04:51.664] Server  LOG     test [{...}]
-[00:04:52.870] Server  LOG     foods {} "categories" {}
-[00:06:24.891] Server  LOG     test [{...}]
-[00:06:26.113] Server  LOG     foods {} "categories" {}
-[00:08:14.661] Server  LOG      ✓ Compiled in 21ms
-[00:08:44.292] Server  LOG     test [{...}]
-[00:08:45.509] Server  LOG     foods {} "categories" {}
-[00:08:45.517] Server  ERROR    ⨯ ReferenceError: category is not defined
-[00:08:45.970] Browser ERROR   uncaughtError: ReferenceError: category is not defined
-[00:08:46.817] Server  LOG     test [{...}]
-[00:08:48.064] Server  LOG     foods {} "categories" {}
-[00:08:48.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:19.067] Server  LOG     test [{...}]
-[00:09:20.518] Server  LOG     foods {} "categories" {}
-[00:09:20.816] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.803] Server  LOG      ✓ Ready in 584ms
+[00:00:15.103] Server  LOG     test [{...}]
+[00:00:16.605] Server  LOG     foods {} "categories" {}
+[00:00:17.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:00.617] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:00.618] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:06.925] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:06.926] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:11.721] Browser LOG     working
+[00:01:13.408] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Salad\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/category","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:01:14.285] Server  LOG     test [{...},{...}]
+[00:01:15.583] Server  LOG     foods {} "categories" {}
+[00:01:17.638] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:17.638] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:31.874] Browser LOG     working 69129e237e81eff15714365c
+[00:01:32.822] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"Ceaser\",\"price\":\"29999\",\"ingredients\":\"lot of vegetable\",\"category\":\"69129e237e81eff15714365c\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69129e367e81eff157143662","category":"69129e237e81eff15714365c","createdAt":"2025-11-11T02:23:50.596Z","foodName":"Ceaser","ingredients":"lot of vegetable","price":29999,"updatedAt":"2025-11-11T02:23:50.596Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"272","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
+[00:01:33.415] Server  LOG     test [{...},{...}]
+[00:01:34.720] Server  LOG     foods {} "categories" {}
+[00:01:41.473] Browser LOG     successfully deleted food
+[00:01:42.090] Server  LOG     test [{...},{...}]
+[00:01:43.418] Server  LOG     foods {} "categories" {}
+[00:01:44.108] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:01:44.108] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:02:17.563] Server  LOG     test [{...},{...}]
+[00:02:17.864] Browser LOG     food wasnt edited {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"Niislel\",\"price\":\"9999\",\"ingredients\":\"tums hiam undug ogurtsi\",\"category\":\"[object Object]\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"patch","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/update/69129e367e81eff157143662","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:3998:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:4513:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:5317:49)\n    at async handleFoodEdit (http://localhost:3000/_next/static/chunks/_d232f4b4._.js:1084:13)","status":500}
+[00:02:18.773] Server  LOG     foods {} "categories" {}
+[00:02:19.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:52.413] Server  LOG     test [{...},{...}]
+[00:02:52.558] Browser LOG     food wasnt edited {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"Niislel\",\"price\":\"9999\",\"ingredients\":\"tums hiam undug ogurtsi\",\"category\":\"[object Object]\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"patch","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/update/69129e367e81eff157143662","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:3998:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:4513:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:5317:49)\n    at async handleFoodEdit (http://localhost:3000/_next/static/chunks/_d232f4b4._.js:1084:13)","status":500}
+[00:02:53.763] Server  LOG     foods {} "categories" {}
+[00:02:54.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:33.382] Server  LOG      ✓ Compiled in 82ms
+[00:05:54.923] Server  LOG     test [{...},{...}]
+[00:05:55.029] Browser LOG     food edited successfully
+[00:05:55.701] Server  LOG     test [{...},{...}]
+[00:05:56.246] Server  LOG     foods {} "categories" {}
+[00:05:56.510] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

@@ -1,5 +1,5 @@
 import { response } from "express";
-import { Category } from "../models/CategorySchema";
+import { Category } from "../models/CategorySchema.js";
 
 export const createFoodCategory = async (req, res) => {
   console.log(req.body);

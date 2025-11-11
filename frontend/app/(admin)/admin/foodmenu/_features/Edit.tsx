@@ -88,7 +88,7 @@ export function Edit(props: { Food: Food }) {
             </div>
             <div className="grid gap-3">
               <Label htmlFor="username-1">Dish category</Label>
-              <Input id="username-1" name="category" defaultValue={category} />
+              <Input id="username-1" name="category" defaultValue={category._id} />
               <p>dropdown</p>
             </div>
 
