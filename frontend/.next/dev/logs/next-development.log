@@ -1,37 +1,31 @@
-[00:00:00.803] Server  LOG      ✓ Ready in 584ms
-[00:00:15.103] Server  LOG     test [{...}]
-[00:00:16.605] Server  LOG     foods {} "categories" {}
-[00:00:17.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:00.617] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:00.618] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:06.925] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:06.926] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:11.721] Browser LOG     working
-[00:01:13.408] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Salad\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/category","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
-[00:01:14.285] Server  LOG     test [{...},{...}]
-[00:01:15.583] Server  LOG     foods {} "categories" {}
-[00:01:17.638] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:17.638] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:31.874] Browser LOG     working 69129e237e81eff15714365c
-[00:01:32.822] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"Ceaser\",\"price\":\"29999\",\"ingredients\":\"lot of vegetable\",\"category\":\"69129e237e81eff15714365c\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69129e367e81eff157143662","category":"69129e237e81eff15714365c","createdAt":"2025-11-11T02:23:50.596Z","foodName":"Ceaser","ingredients":"lot of vegetable","price":29999,"updatedAt":"2025-11-11T02:23:50.596Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"272","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
-[00:01:33.415] Server  LOG     test [{...},{...}]
-[00:01:34.720] Server  LOG     foods {} "categories" {}
-[00:01:41.473] Browser LOG     successfully deleted food
-[00:01:42.090] Server  LOG     test [{...},{...}]
-[00:01:43.418] Server  LOG     foods {} "categories" {}
-[00:01:44.108] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:01:44.108] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:02:17.563] Server  LOG     test [{...},{...}]
-[00:02:17.864] Browser LOG     food wasnt edited {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"Niislel\",\"price\":\"9999\",\"ingredients\":\"tums hiam undug ogurtsi\",\"category\":\"[object Object]\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"patch","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/update/69129e367e81eff157143662","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:3998:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:4513:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:5317:49)\n    at async handleFoodEdit (http://localhost:3000/_next/static/chunks/_d232f4b4._.js:1084:13)","status":500}
-[00:02:18.773] Server  LOG     foods {} "categories" {}
-[00:02:19.131] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:52.413] Server  LOG     test [{...},{...}]
-[00:02:52.558] Browser LOG     food wasnt edited {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"Niislel\",\"price\":\"9999\",\"ingredients\":\"tums hiam undug ogurtsi\",\"category\":\"[object Object]\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"patch","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/update/69129e367e81eff157143662","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:3998:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:4513:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_ed5da96d._.js:5317:49)\n    at async handleFoodEdit (http://localhost:3000/_next/static/chunks/_d232f4b4._.js:1084:13)","status":500}
-[00:02:53.763] Server  LOG     foods {} "categories" {}
-[00:02:54.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:05:33.382] Server  LOG      ✓ Compiled in 82ms
-[00:05:54.923] Server  LOG     test [{...},{...}]
-[00:05:55.029] Browser LOG     food edited successfully
-[00:05:55.701] Server  LOG     test [{...},{...}]
-[00:05:56.246] Server  LOG     foods {} "categories" {}
-[00:05:56.510] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:00.754] Server  LOG      ✓ Ready in 565ms
+[00:00:37.975] Server  ERROR    ⨯ AxiosError: Request failed with status code 404
+[00:00:38.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:38.154] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 404
+[00:01:12.738] Server  ERROR    ⨯ AxiosError: Request failed with status code 404
+[00:01:12.846] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:12.846] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 404
+[00:01:40.963] Server  LOG      ✓ Compiled in 23ms
+[00:01:50.222] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:01:50.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:50.313] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:02:03.262] Server  LOG      ✓ Compiled in 15ms
+[00:02:10.598] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:02:10.725] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:10.725] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:02:33.229] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:02:33.441] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:33.441] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:03:15.900] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:03:16.140] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:16.140] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:03:37.073] Server  LOG      ✓ Compiled in 14ms
+[00:03:42.221] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:03:42.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:42.539] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:03:57.989] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:03:58.216] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:58.216] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:04:43.335] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:04:43.553] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:43.553] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500

@@ -1,19 +1,15 @@
 import { Foodcard, Navbar } from "@/components/";
-import { Food, FoodCategory } from "@/lib/types";
-import { API_URI } from "@/lib/utils";
-import axios from "axios";
-import Image from "next/image";
+import { Category, Food, } from "@/lib/types";
+import { axiosInstance } from "@/lib/utils";
 
 export default async function Home() {
   // const foodCategories = await fetch("http://localhost:5000/foodCategory");
   // const data = await foodCategories.json();
   // console.log(data);
 
-  const foodCategories = await axios.get<FoodCategory[]>(
-    `${API_URI}/foodCategory`
-  );
+  const foodCategories = await axiosInstance.get<Category[]>(`/category`);
 
-  const foods = await axios.get<Food[]>(`${API_URI}/food`);
+  const foods = await axiosInstance.get<Food[]>(`/food`);
 
   return (
     <div className="bg-[#404040]">
@@ -28,7 +24,7 @@ export default async function Home() {
                 {foods.data.map((food) => {
                   const { foodName, category } = food;
 
-                  if (_id == category) {
+                  if (_id == category._id) {
                     return <Foodcard key={food._id} Food={food} />;
                   }
                 })}
