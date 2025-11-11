@@ -876,6 +876,10 @@
     background-color: #fff;
   }
 
+  .bg-\[red\] {
+    background-color: red;
+  }
+
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }

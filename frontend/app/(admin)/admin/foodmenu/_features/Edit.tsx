@@ -15,7 +15,10 @@ import { Label } from "@/components/ui/label";
 import { Food } from "@/lib/types";
 import { EditIcon } from "../_icons/EditIcon";
 import { axiosInstance } from "@/lib/utils";
+import { useRouter } from "next/navigation";
+import { DESTRUCTION } from "dns";
 export function Edit(props: { Food: Food }) {
+  const router = useRouter()
   const { foodName, price, ingredients, image, _id, category } = props.Food;
   const handleFoodEdit = async (
     event: React.SyntheticEvent<HTMLFormElement>
@@ -26,19 +29,31 @@ export function Edit(props: { Food: Food }) {
     const ingredients = formData.get("ingredients");
     const category = formData.get("category");
 
-    // try {
+    try {
+      await axiosInstance.patch(`/food/update/${_id}`, {
+        foodName,
+        price,
+        ingredients,
+        category,
+      });
+      console.log("food edited successfully");
+      router.refresh()
+    } catch (error) {
+      console.log("food wasnt edited", error);
+    }
 
-    //   console.log("food edited successfully");
-    // } catch (error) {
-    //   console.log("food wasnt edited", error);
-    // }
-    await axiosInstance.patch(`/food/update/${_id}`, {
-      foodName,
-      price,
-      ingredients,
-      category,
-    });
   };
+
+  const handleFoodDelete = async (id:string)  =>{
+    try {
+      await axiosInstance.delete(`/food/delete/${id}`);
+      console.log("successfully deleted food");
+      router.refresh()
+    } catch (error) {
+      console.log("food wasnt deleted", error);
+      
+    }
+  }
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -94,6 +109,9 @@ export function Edit(props: { Food: Food }) {
             </DialogClose>
           </div>
         </form>
+          <DialogClose asChild>
+            <Button variant="destructive" onClick={()=>{handleFoodDelete(_id)}}>Delete Food</Button>
+          </DialogClose>
         <DialogFooter></DialogFooter>
       </DialogContent>
     </Dialog>
