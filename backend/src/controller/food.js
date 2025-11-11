@@ -20,7 +20,7 @@ export const createFood = async (req, res) => {
 };
 export const getFood = async (req, res) => {
   try {
-    const result = await Food.find();
+    const result = await Food.find().populate("category");
     res.status(200).send(result);
   } catch (error) {
     res.status(500).send(error);
@@ -47,3 +47,4 @@ export const deleteFood = async (req, res) => {
     res.status(500).send("deletion failed");
   }
 };
+//6912991e4afa2029d145922b
