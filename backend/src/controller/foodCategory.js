@@ -39,16 +39,7 @@ export const getFoodCategory = async (req, res) => {
             as: "foods",
           },
       },
-      {
-        $project:
-          /**
-           * specifications: The fields to
-           *   include or exclude.
-           */
-          {
-            categoryName: 0,
-          },
-      },
+
     ])
     res.send(result);
   } catch (error) {
