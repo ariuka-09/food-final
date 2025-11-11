@@ -27,7 +27,7 @@ app.use(
 app.use(express.json());
 connectDB();
 
-app.use("/foodCategory", foodCategoryRouter);
+app.use("/category", foodCategoryRouter);
 app.use("/user", userRouter);
 app.use("/food", foodRouter);
 
