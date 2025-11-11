@@ -1,12 +1,23 @@
-[00:00:01.212] Server  LOG      ✓ Ready in 887ms
-[00:00:06.381] Server  LOG     test [{...},{...},{...},{...}]
-[00:00:07.476] Server  LOG     foods {} "categories" {}
-[00:00:07.527] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
-[00:00:07.904] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.206] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
-[00:01:10.148] Server  LOG      ✓ Compiled in 41ms
-[00:01:17.179] Browser ERROR   unhandledRejection: AxiosError: Network Error
-[00:01:17.677] Server  LOG     test [{...},{...},{...},{...}]
-[00:01:18.763] Server  LOG     foods {} "categories" {}
-[00:01:19.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:19.460] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:00:00.898] Server  LOG      ✓ Ready in 655ms
+[00:00:25.333] Server  LOG     test [{...},{...},{...},{...}]
+[00:00:26.883] Server  LOG     foods {} "categories" {}
+[00:00:26.915] Server  ERROR   Invalid DOM property `clip-path`. Did you mean `clipPath`?
+[00:00:45.155] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:50.290] Server  LOG     test [{...},{...},{...},{...}]
+[00:00:51.381] Server  LOG     foods {} "categories" {}
+[00:00:51.579] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:51.713] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:01:06.047] Server  LOG     test [{...},{...},{...},{...}]
+[00:01:07.147] Server  LOG     foods {} "categories" {}
+[00:01:07.168] Browser ERROR   unhandledRejection: AxiosError: Network Error
+[00:01:07.315] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.442] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:01:15.638] Server  LOG     test [{...},{...},{...},{...}]
+[00:01:16.878] Server  LOG     foods {} "categories" {}
+[00:01:17.167] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:17.373] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath
+[00:01:29.857] Browser ERROR   unhandledRejection: AxiosError: Network Error
+[00:01:30.193] Server  LOG     test [{...},{...},{...},{...}]
+[00:01:31.226] Server  LOG     foods {} "categories" {}
+[00:01:31.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:31.711] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? clip-path clipPath

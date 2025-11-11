@@ -18,7 +18,7 @@ app.use(
       "http://localhost:3000",
       "https://food-final-backend.vercel.app", // or your real frontend URL
     ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
