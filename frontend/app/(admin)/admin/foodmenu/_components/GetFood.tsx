@@ -4,9 +4,9 @@ import { FoodcardForAdmin } from "../_features/FoodCardForAdmin";
 import { axiosInstance } from "@/lib/utils";
 
 export async function GetFood() {
-  const foodCategories = await axiosInstance.get<Category[]>(
+  const categories = await axiosInstance.get<Category[]>(
     `/category`
-  );
+  )
 
   // const foods = await axiosInstance.get<Food[]>(`/food`);
   // console.log("foods", foods, "categories", foodCategories);
@@ -14,18 +14,17 @@ export async function GetFood() {
   return (
     <div className="bg-[#ffffff] rounded-[20px] p-5">
       <div className="flex flex-col gap-10">
-        {foodCategories.data.map((categories) => {
-          const { _id, categoryName, foods } = categories;
+        {categories.data.map((category) => {
+          const { _id, categoryName, foods } = category;
           return (
             <div className="" key={_id}>
               <div className="text-black text-[20px] font-semibold">
                 {categoryName}
               </div>
               <div className="flex flex-wrap gap-4">
-                <AddFood categories={categories} />
-                {foods.map((food) => {
-                  const { foodName, category } = food;
-                  return <FoodcardForAdmin key={food._id} Food={food} />;
+                <AddFood category={category} />
+                {foods && foods.map((food) => {
+                  return <FoodcardForAdmin key={food._id}  Food={food}/>;
                   // if (_id == category._id) {
                   //   return <FoodcardForAdmin key={food._id} Food={food} />;
                   // }

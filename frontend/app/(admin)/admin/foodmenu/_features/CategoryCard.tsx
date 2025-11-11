@@ -36,7 +36,7 @@ export function CategoryCard (props:{Category:Category}){
         {Category.categoryName}
         </p>
         <div className="px-2.5 py-0.5 bg-black text-white rounded-full">
-        10
+        {Category.foods &&  Category.foods.length}
         </div>
     </Button>
 </DialogTrigger>

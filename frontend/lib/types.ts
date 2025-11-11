@@ -5,7 +5,7 @@ export type Food = {
   ingredients: string;
   image: string;
   price: number;
-  category: Category;
+  category: string;
 };
 export type foodInfo = {
   img: string;

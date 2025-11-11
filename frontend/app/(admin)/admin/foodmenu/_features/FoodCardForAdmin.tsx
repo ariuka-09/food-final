@@ -1,4 +1,4 @@
-import { Food } from "@/lib/types";
+import { Category, Food } from "@/lib/types";
 import { Edit } from "./Edit";
 
 export const FoodcardForAdmin = (props: { Food: Food }) => {
