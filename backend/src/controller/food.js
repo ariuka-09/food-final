@@ -29,7 +29,7 @@ export const getFood = async (req, res) => {
 export const updateFood = async (req, res) => {
   const { id } = await req.params;
   const { body } = req;
-  console.log("id", body);
+  console.log("id body", body);
 
   try {
     await Food.findByIdAndUpdate(id, body);
