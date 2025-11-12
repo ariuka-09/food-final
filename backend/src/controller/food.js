@@ -33,7 +33,8 @@ export const updateFood = async (req, res) => {
 
   try {
     await Food.findByIdAndUpdate(id, body);
-    res.status(200).send("updated successfully");
+    res.status(200).send({message:"updated successfully", data:body});
+
   } catch (error) {
     res.status(500).send({message:"wasnt updated", error:error});
   }

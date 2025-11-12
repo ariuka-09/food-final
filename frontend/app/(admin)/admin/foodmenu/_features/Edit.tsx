@@ -23,15 +23,21 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Category } from "@/lib/types";
-import { useContext } from "react";
+import { useState } from "react";
 
-export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, Categories:Category[], CategoriesNames:string[], CurrentCategory:string }) {
+export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, Categories:Category[], CategoriesNamesAndId:{categoryName:string, categoryId:string}[], CurrentCategory:{name:string, id:string  } }) {
   const router = useRouter()
-  const {Categories, Food, CategoriesNames, CurrentCategory} = props
-  const { foodName, price, ingredients, image, _id, category, } = Food;
-  console.log("populated category", category);
-
+  const {Categories, Food, CategoriesNamesAndId, CurrentCategory} = props
+  console.log("Current on edit", CurrentCategory);
   
+  const { foodName, price, ingredients, image, _id, category, } = Food;
+
+  const [categoryNameAndId, setCategoryNameAndId] = useState(CurrentCategory.id);
+  const handleCategoryChange = (event) =>{
+    setCategoryNameAndId(event)
+    console.log("event", event);
+    
+  }
   const handleFoodEdit = async (
     event: React.SyntheticEvent<HTMLFormElement>
   ) => {
@@ -41,14 +47,12 @@ export function Edit(props: { Food:  {foodName:string, price:number, ingredients
     const foodName = formData.get("foodName");
     const price = formData.get("price");
     const ingredients = formData.get("ingredients");
-    const category = formData.get("category");
-
     try {
       await axiosInstance.patch(`/food/update/${_id}`, {
         foodName,
         price,
         ingredients,
-        category,
+        categoryNameAndId
       });
       console.log("food edited successfully");
       router.refresh()
@@ -68,6 +72,9 @@ export function Edit(props: { Food:  {foodName:string, price:number, ingredients
       
     }
   }
+
+
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -102,13 +109,13 @@ export function Edit(props: { Food:  {foodName:string, price:number, ingredients
             </div>
             <div className="grid gap-3">
               <Label htmlFor="category">Dish category</Label>
-                <Select defaultValue={CurrentCategory}>
+                <Select defaultValue={CurrentCategory.name} onValueChange={handleCategoryChange} >
                   <SelectTrigger className="w-[180px]">
                     <SelectValue  placeholder="Change category?"  />
                   </SelectTrigger>
                   <SelectContent >
-                    {CategoriesNames.map((CategoryName)=>{
-                      return(<SelectItem value={CategoryName} >{CategoryName} </SelectItem>)
+                    {CategoriesNamesAndId.map((CategoryNamesAndId)=>{
+                      return(<SelectItem value={CategoryNamesAndId.categoryId} >{CategoryNamesAndId.categoryName} </SelectItem>)
                     })}
                     {/* <SelectItem value="light">Light</SelectItem>
                     <SelectItem value="dark">Dark</SelectItem>

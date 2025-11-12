@@ -7,7 +7,7 @@ export default async function Home() {
   // const data = await foodCategories.json();
   // console.log(data);
 
-  const foodCategories = await axiosInstance.get<Category[]>(`/category`);
+  const categories = await axiosInstance.get<Category[]>(`/category`);
 
   const foods = await axiosInstance.get<Food[]>(`/food`);
 
@@ -15,18 +15,14 @@ export default async function Home() {
     <div className="bg-[#404040]">
       <Navbar />
       <div className="flex flex-col gap-10">
-        {foodCategories.data.map((categories) => {
-          const { _id, categoryName } = categories;
+        {categories.data.map((category) => {
+          const { _id, categoryName, foods } = category;
           return (
             <div className="" key={_id}>
               <div className="text-white">{categoryName}</div>
               <div className="flex flex-wrap">
-                {foods.data.map((food) => {
-                  const { foodName, category } = food;
-
-                  if (_id == category._id) {
+                {foods && foods.map((food) => {
                     return <Foodcard key={food._id} Food={food} />;
-                  }
                 })}
               </div>
             </div>
