@@ -1,5 +1,195 @@
-[00:00:00.790] Server  LOG      ✓ Ready in 585ms
-[00:00:04.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:34.245] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:41.630] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:16.432] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.693] Server  LOG      ✓ Ready in 1467ms
+[00:00:10.563] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.084] Server  LOG     Categories {}
+[00:00:25.085] Server  LOG     category names [{...},{...},{...}]
+[00:00:25.086] Server  LOG     test [{...},{...},{...}]
+[00:00:25.087] Server  LOG     get food deer [{...},{...},{...}]
+[00:00:25.182] Server  LOG     Current on edit {}
+[00:00:25.185] Server  LOG     Current on edit {}
+[00:00:25.191] Server  LOG     Current on edit {}
+[00:00:25.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.494] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:25.494] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:25.494] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:25.494] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:25.494] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:00:25.494] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:00:27.410] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Primitive.div`.  It was passed a child from Edit.
+[00:00:31.561] Browser LOG     event 6914045cd53e8d624e0b4240
+[00:00:31.561] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:31.561] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:34.326] Browser LOG     food edited successfully
+[00:00:34.925] Server  LOG     Categories {}
+[00:00:34.926] Server  LOG     category names [{...},{...},{...}]
+[00:00:34.928] Server  LOG     test [{...},{...},{...}]
+[00:00:34.931] Server  LOG     get food deer [{...},{...},{...}]
+[00:00:35.079] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:35.079] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:35.079] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:35.079] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:00:35.079] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:00:35.079] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:01:28.117] Server  LOG     Categories {}
+[00:01:28.118] Server  LOG     category names [{...},{...},{...}]
+[00:01:28.120] Server  LOG     test [{...},{...},{...}]
+[00:01:28.121] Server  LOG     get food deer [{...},{...},{...}]
+[00:01:28.172] Server  LOG     Current on edit {}
+[00:01:28.176] Server  LOG     Current on edit {}
+[00:01:28.184] Server  LOG     Current on edit {}
+[00:01:28.187] Server  LOG     Current on edit {}
+[00:01:28.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:28.709] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:01:28.709] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:27.346] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Primitive.div`.  It was passed a child from Edit.
+[00:02:34.950] Browser LOG     food edited successfully
+[00:02:35.549] Server  LOG     Categories {}
+[00:02:35.550] Server  LOG     category names [{...},{...},{...}]
+[00:02:35.552] Server  LOG     test [{...},{...},{...}]
+[00:02:35.554] Server  LOG     get food deer [{...},{...},{...}]
+[00:02:35.776] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:35.776] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:40.399] Browser LOG     event 69129e237e81eff15714365c
+[00:02:40.399] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:40.399] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:42.873] Browser LOG     food edited successfully
+[00:02:43.476] Server  LOG     Categories {}
+[00:02:43.477] Server  LOG     category names [{...},{...},{...}]
+[00:02:43.478] Server  LOG     test [{...},{...},{...}]
+[00:02:43.480] Server  LOG     get food deer [{...},{...},{...}]
+[00:02:43.682] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:02:43.682] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:03:31.497] Server  LOG     Categories {}
+[00:03:31.497] Server  LOG     category names [{...},{...},{...}]
+[00:03:31.498] Server  LOG     test [{...},{...},{...}]
+[00:03:31.500] Server  LOG     get food deer [{...},{...},{...}]
+[00:03:31.548] Server  LOG     Current on edit {}
+[00:03:31.553] Server  LOG     Current on edit {}
+[00:03:31.559] Server  LOG     Current on edit {}
+[00:03:31.562] Server  LOG     Current on edit {}
+[00:03:31.870] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:32.109] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:03:32.109] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:04:42.987] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Primitive.div`.  It was passed a child from Edit.
+[00:04:45.406] Browser LOG     event 69129e237e81eff15714365c
+[00:05:11.130] Browser LOG     food edited successfully
+[00:05:11.745] Server  LOG     Categories {}
+[00:05:11.746] Server  LOG     category names [{...},{...},{...}]
+[00:05:11.747] Server  LOG     test [{...},{...},{...}]
+[00:05:11.748] Server  LOG     get food deer [{...},{...},{...}]
+[00:05:11.945] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:11.945] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:25.245] Browser LOG     food edited successfully
+[00:05:25.874] Server  LOG     Categories {}
+[00:05:25.874] Server  LOG     category names [{...},{...},{...}]
+[00:05:25.875] Server  LOG     test [{...},{...},{...}]
+[00:05:25.877] Server  LOG     get food deer [{...},{...},{...}]
+[00:05:26.061] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:26.061] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:05:52.967] Browser LOG     event 6914045cd53e8d624e0b4240
+[00:05:52.967] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:05:52.967] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:38.310] Server  LOG      ✓ Compiled in 98ms
+[00:06:38.478] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:38.478] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:39.325] Server  LOG      ✓ Compiled in 37ms
+[00:06:39.440] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/Edit.tsx:55:35
+Parsing ecmascript source code failed
+  53 |         price,
+  54 |         ingredients,
+> 55 |         category:categoryNameAndId;
+     |                                   ^
+  56 |       });
+  57 |       console.log("food edited successfully");
+  58 |       router.refresh()
+
+Expected ',', got ';'
+
+Import trace:
+  Server Component:
+    ./app/(admin)/admin/foodmenu/_features/Edit.tsx
+    ./app/(admin)/admin/foodmenu/_features/FoodCardForAdmin.tsx
+    ./app/(admin)/admin/foodmenu/_components/GetFood.tsx
+    ./app/(admin)/admin/foodmenu/page.tsx
+[00:06:47.323] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:47.323] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:48.060] Server  LOG     Categories {}
+[00:06:48.061] Server  LOG     category names [{...},{...},{...}]
+[00:06:48.065] Server  LOG     test [{...},{...},{...}]
+[00:06:48.067] Server  LOG     get food deer [{...},{...},{...}]
+[00:06:48.264] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:48.264] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:48.264] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:48.264] Browser LOG     Current on edit {"id":"69129e237e81eff15714365c","name":"Salad"}
+[00:06:48.264] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:48.265] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:48.265] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:48.265] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:51.354] Browser LOG     food edited successfully
+[00:06:51.883] Server  LOG     Categories {}
+[00:06:51.884] Server  LOG     category names [{...},{...},{...}]
+[00:06:51.885] Server  LOG     test [{...},{...},{...}]
+[00:06:51.887] Server  LOG     get food deer [{...},{...},{...}]
+[00:06:52.076] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"69129c42c25cf7822183796f","name":"Main course"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}
+[00:06:52.076] Browser LOG     Current on edit {"id":"6914045cd53e8d624e0b4240","name":"Seafood"}

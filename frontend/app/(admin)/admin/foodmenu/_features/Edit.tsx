@@ -52,7 +52,7 @@ export function Edit(props: { Food:  {foodName:string, price:number, ingredients
         foodName,
         price,
         ingredients,
-        categoryNameAndId
+        category:categoryNameAndId,
       });
       console.log("food edited successfully");
       router.refresh()
