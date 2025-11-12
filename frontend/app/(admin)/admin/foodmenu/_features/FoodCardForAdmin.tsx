@@ -1,9 +1,9 @@
 import { Category, Food } from "@/lib/types";
 import { Edit } from "./Edit";
 
-export const FoodcardForAdmin = (props: { Food: Food; categories }) => {
+export const FoodcardForAdmin = (props: { Food: Food; Categories:Category[], CurrentCategory:string, CategoriesNames:string[] }) => {
   const { foodName, price, ingredients, image, _id } = props.Food;
-  const { categories} = props
+  const { Categories, Food, CategoriesNames, CurrentCategory} = props
   return (
     <div className="p-4 w-[239px] h-[209px] bg-white rounded-[20px] border-[#E4E4E7] border">
       <div className="h-[60%] relative">
@@ -13,7 +13,7 @@ export const FoodcardForAdmin = (props: { Food: Food; categories }) => {
           alt=""
         />
         <button className="absolute right-2 bottom-2">
-          <Edit Food={props.Food} categories={categories} />
+          <Edit Food={Food} Categories={Categories} CategoriesNames={CategoriesNames} CurrentCategory={CurrentCategory} />
         </button>
         {/* the adding logic will be done here  */}
       </div>

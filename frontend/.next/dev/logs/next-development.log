@@ -1,753 +1,41 @@
-[00:00:00.896] Server  LOG      ✓ Ready in 685ms
-[00:00:07.063] Server  LOG     test [{...},{...}]
-[00:00:07.645] Server  LOG     populated category "69129c42c25cf7822183796f"
-[00:00:07.648] Server  LOG     populated category "69129e237e81eff15714365c"
-[00:00:07.971] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:08.187] Browser LOG     populated category 69129c42c25cf7822183796f
-[00:00:08.187] Browser LOG     populated category 69129c42c25cf7822183796f
-[00:00:08.187] Browser LOG     populated category 69129e237e81eff15714365c
-[00:00:08.187] Browser LOG     populated category 69129e237e81eff15714365c
-[00:00:08.187] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <AdminPage>
-      <div className="bg-[#F4F4F...">
-        ...
-          <CategoryCard Category={{_id:"69129...", ...}}>
-            <Dialog>
-              <Dialog data-slot="dialog">
-                <DialogProvider scope={undefined} triggerRef={{current:null}} contentRef={{current:null}} ...>
-                  <DialogTrigger asChild={true}>
-                    <DialogTrigger data-slot="dialog-tri..." asChild={true}>
-                      <Primitive.button type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                        <Primitive.button.Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                          <Primitive.button.SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                            <Button className={"py-2 px-..."} type="button" aria-haspopup="dialog" aria-expanded={false} ...>
-                              <button
-                                data-slot="dialog-trigger"
-                                className={"justify-center whitespace-nowrap text-sm font-medium transition-all disab..."}
-                                type="button"
-                                aria-haspopup="dialog"
-                                aria-expanded={false}
-+                               aria-controls="radix-_R_1j5esnebn5rlb_"
--                               aria-controls="radix-_R_5j5esnebn5rlb_"
-                                data-state="closed"
-                                onClick={function handleEvent}
-                                ref={function}
-                              >
-                  ...
-          ...
-        ...
-
-[00:08:02.425] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:9:3
+[00:00:00.679] Server  LOG      ✓ Ready in 488ms
+[00:00:36.232] Server  ERROR    ⨯ AxiosError: Request failed with status code 500
+[00:00:36.495] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.496] Browser ERROR   uncaughtError: AxiosError: Request failed with status code 500
+[00:04:14.428] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:19.172] Server  LOG     Categories {}
+[00:04:19.173] Server  LOG     test [{...},{...}]
+[00:04:20.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:00.423] Server  LOG     Categories {}
+[00:05:00.425] Server  LOG     test [{...},{...}]
+[00:05:17.323] Server  LOG     Categories {}
+[00:05:17.325] Server  LOG     test [{...},{...}]
+[00:05:25.197] Server  LOG     Categories {}
+[00:05:25.199] Server  LOG     test [{...},{...}]
+[00:05:34.253] Server  LOG     Categories {}
+[00:05:34.255] Server  LOG     test [{...},{...}]
+[00:05:44.119] Server  LOG      ✓ Compiled in 24ms
+[00:05:57.904] Server  LOG      ✓ Compiled in 26ms
+[00:06:10.934] Server  LOG     Categories {}
+[00:06:10.935] Server  LOG     test [{...},{...}]
+[00:06:30.250] Server  LOG     Categories {}
+[00:06:30.252] Server  LOG     test [{...},{...}]
+[00:06:38.998] Server  LOG     Categories {}
+[00:06:38.999] Server  LOG     test [{...},{...}]
+[00:06:46.630] Server  LOG     Categories {}
+[00:06:46.632] Server  LOG     test [{...},{...}]
+[00:06:55.633] Server  LOG      ✓ Compiled in 25ms
+[00:06:55.743] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/Edit.tsx:28:172
 Parsing ecmascript source code failed
-   7 | export default async function AdminPage() {
-   8 |   const Categories = await axiosInstance.get("/category");
->  9 |   export const Categories = createContext  
-     |   ^^^^^^
-  10 |
-  11 |   return (
-  12 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-
-'import', and 'export' cannot be used outside of module code
-[00:08:10.422] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:9:3
-Parsing ecmascript source code failed
-   7 | export default async function AdminPage() {
-   8 |   const Categories = await axiosInstance.get("/category");
->  9 |   export const Categories = createContext([Categories])  
-     |   ^^^^^^
-  10 |
-  11 |   return (
-  12 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-
-'import', and 'export' cannot be used outside of module code
-[00:08:16.422] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:9:3
-Parsing ecmascript source code failed
-   7 | export default async function AdminPage() {
-   8 |   const Categories = await axiosInstance.get("/category");
->  9 |   export const Categorys = createContext([Categories])  
-     |   ^^^^^^
-  10 |
-  11 |   return (
-  12 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-
-'import', and 'export' cannot be used outside of module code
-[00:09:20.797] Server  LOG      ✓ Compiled in 88ms
-[00:09:21.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:09:21.423] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:9:3
-Parsing ecmascript source code failed
-   7 | export default async function AdminPage() {
-   8 |   const Categories = await axiosInstance.get("/category");
->  9 |   export const Categorys = createContext([Categories])  
-     |   ^^^^^^
-  10 |
-  11 |   return (
-  12 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-
-'import', and 'export' cannot be used outside of module code
-[00:09:51.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:09:52.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:10:41.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:10:41.423] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:11:10
-Parsing ecmascript source code failed
-   9 |   return (
-  10 |     <Categories/>
-> 11 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-     |          ^^^^^^^^^
-  12 |       <Category Categories={Categories.data} />
-  13 |       <GetFood />
-  14 |     </div>
-
-Expected ',', got 'className'
-[00:10:49.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:11:49.424] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:11:49.425] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:11:10
-Parsing ecmascript source code failed
-   9 |   return (
-  10 |       <Category/>
-> 11 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-     |          ^^^^^^^^^
-  12 |       <Category Categories={Categories.data} />
-  13 |       <GetFood />
-  14 |     </div>
-
-Expected ',', got 'className'
-[00:11:59.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:11:59.423] Browser ERROR   ./app/(admin)/admin/foodmenu/page.tsx:11:10
-Parsing ecmascript source code failed
-   9 |   return (
-  10 |       <Category.Provider/>
-> 11 |     <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
-     |          ^^^^^^^^^
-  12 |       <Category Categories={Categories.data} />
-  13 |       <GetFood />
-  14 |     </div>
-
-Expected ',', got 'className'
-[00:12:46.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:12:55.427] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:13:11.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:13:11.423] Browser ERROR   ./app/(admin)/admin/foodmenu/_components/GetFood.tsx:27:95
-Parsing ecmascript source code failed
-  25 |                 <AddFood category={category} />
-  26 |                 {foods && foods.map((food) => {
-> 27 |                   return <FoodcardForAdmin key={food._id}  Food={food} categories={categories/>;
-     |                                                                                               ^
-  28 |                   // if (_id == category._id) {
-  29 |                   //   return <FoodcardForAdmin key={food._id} Food={food} />;
-  30 |                   // }
-
-Expression expected
-
-Import trace:
-  Server Component:
-    ./app/(admin)/admin/foodmenu/_components/GetFood.tsx
-    ./app/(admin)/admin/foodmenu/page.tsx
-[00:13:12.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:13:22.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:13:37.425] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:13:46.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:14:04.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:14:04.423] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/FoodCardForAdmin.tsx:6:9
-Parsing ecmascript source code failed
-  4 | export const FoodcardForAdmin = (props: { Food: Food; categories }) => {
-  5 |   const { foodName, price, ingredients, image, _id } = props.Food;
-> 6 |   const { categories}
-    |         ^^^^^^^^^^^^^
-  7 |   return (
-  8 |     <div className="p-4 w-[239px] h-[209px] bg-white rounded-[20px] border-[#E4E4E7] border">
-  9 |       <div className="h-[60%] relative">
-
-'const' declarations must be initialized
-
-Import trace:
-  Server Component:
-    ./app/(admin)/admin/foodmenu/_features/FoodCardForAdmin.tsx
-    ./app/(admin)/admin/foodmenu/_components/GetFood.tsx
-    ./app/(admin)/admin/foodmenu/page.tsx
-[00:14:07.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:14:08.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:14:32.471] Server  LOG      ✓ Compiled in 29ms
-[00:14:33.437] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:14:33.437] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/Edit.tsx:111:27
-Parsing ecmascript source code failed
-  109 |                     {categories.map((category)=>{
-  110 |                       return(<SelectItem value='axa' >Light</SelectItem>)
-> 111 |                     })} */}
-      |                           ^
-  112 |                     {/* <SelectItem value="light">Light</SelectItem>
-  113 |                     <SelectItem value="dark">Dark</SelectItem>
-  114 |                     <SelectItem value="system">System</SelectItem>
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+  26 | import { useContext } from "react";
+  27 |
+> 28 | export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, Categories:Category[], CategoriesNames={CategoriesNames} }) {
+     |                                                                                                                                                                            ^
+  29 |   const router = useRouter()
+  30 |   const {Categories, Food} = props
+  31 |   const CategoriesNamez = useContext(CategoriesNamesContext)
+
+Expected ';', got '='
 
 Import trace:
   Server Component:
@@ -755,14 +43,24 @@ Import trace:
     ./app/(admin)/admin/foodmenu/_features/FoodCardForAdmin.tsx
     ./app/(admin)/admin/foodmenu/_components/GetFood.tsx
     ./app/(admin)/admin/foodmenu/page.tsx
-[00:14:33.437] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/Edit.tsx:145:1
-Parsing ecmascript source code failed
-  143 |   );
-  144 | }
-> 145 | 
-      | ^
+[00:06:59.312] Server  LOG     Categories {}
+[00:06:59.314] Server  LOG     test [{...},{...}]
+[00:07:02.767] Server  LOG      ✓ Compiled in 13ms
+[00:07:16.322] Server  LOG      ✓ Compiled in 14ms
+[00:07:26.391] Server  LOG      ✓ Compiled in 43ms
+[00:07:26.496] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/Edit.tsx:25:1
+Export Category doesn't exist in target module
+  23 |   SelectValue,
+  24 | } from "@/components/ui/select"
+> 25 | import { Category } from "@/lib/types";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { useContext } from "react";
+  27 |
+  28 | export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, Categories:Category[], CategoriesNames }) {
 
-Unterminated block comment
+The export Category was not found in module [project]/lib/types.ts [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
 Import trace:
   Server Component:
@@ -770,569 +68,143 @@ Import trace:
     ./app/(admin)/admin/foodmenu/_features/FoodCardForAdmin.tsx
     ./app/(admin)/admin/foodmenu/_components/GetFood.tsx
     ./app/(admin)/admin/foodmenu/page.tsx
-[00:14:39.708] Server  LOG      ✓ Compiled in 68ms
-[00:14:40.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
+[00:07:26.496] Browser ERROR   ./app/(admin)/admin/foodmenu/_features/Edit.tsx:25:1
+Export Category doesn't exist in target module
+  23 |   SelectValue,
+  24 | } from "@/components/ui/select"
+> 25 | import { Category } from "@/lib/types";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  26 | import { useContext } from "react";
+  27 |
+  28 | export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, Categories:Category[], CategoriesNames }) {
 
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+The export Category was not found in module [project]/lib/types.ts [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
 
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
+Import trace:
   Server Component:
-    ./lib/utils.ts
+    ./app/(admin)/admin/foodmenu/_features/Edit.tsx
+    ./app/(admin)/admin/foodmenu/_features/FoodCardForAdmin.tsx
+    ./app/(admin)/admin/foodmenu/_components/GetFood.tsx
     ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:14:45.497] Server  LOG      ✓ Compiled in 22ms
-[00:14:46.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:15:06.859] Server  LOG      ✓ Compiled in 62ms
-[00:15:07.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:15:30.288] Server  LOG      ✓ Compiled in 54ms
-[00:15:30.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:15:36.053] Server  LOG      ✓ Compiled in 22ms
-[00:15:36.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:15:38.572] Server  LOG      ✓ Compiled in 29ms
-[00:15:39.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:15:51.433] Server  LOG      ✓ Compiled in 19ms
-[00:15:52.423] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:15:53.519] Server  LOG      ✓ Compiled in 40ms
-[00:15:54.422] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:08.131] Server  LOG      ✓ Compiled in 38ms
-[00:16:08.421] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:17.943] Server  ERROR    ⨯ ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-
-[00:16:18.057] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:18.474] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:18.474] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:18.672] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:19.058] Browser ERROR   uncaughtError: Error: ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-
-[00:16:19.165] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:19.498] Browser ERROR   ./lib/utils.ts:3:10
-Ecmascript file had an error
-  1 | import axios from "axios";
-  2 | import { clsx, type ClassValue } from "clsx";
-> 3 | import { createContext } from "react";
-    |          ^^^^^^^^^^^^^
-  4 | import { twMerge } from "tailwind-merge";
-  5 |
-  6 | export function cn(...inputs: ClassValue[]) {
-
-You're importing a component that needs `createContext`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
-
- Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-
-Import traces:
-  Server Component:
-    ./lib/utils.ts
-    ./app/(admin)/admin/foodmenu/page.tsx
-
-  Client Component Browser:
-    ./lib/utils.ts [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component Browser]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./lib/utils.ts [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Client Component SSR]
-    ./app/(admin)/admin/foodmenu/_features/AddCategory.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/_components/Category.tsx [Server Component]
-    ./app/(admin)/admin/foodmenu/page.tsx [Server Component]
-[00:16:26.604] Server  LOG      ✓ Compiled in 65ms
-[00:16:31.352] Server  LOG     test [{...},{...}]
-[00:16:32.581] Server  ERROR    ⨯ RangeError: Maximum call stack size exceeded
-[00:16:32.848] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:33.081] Browser ERROR   uncaughtError: RangeError: Maximum call stack size exceeded
+[00:07:36.846] Server  LOG     Categories {}
+[00:07:36.848] Server  LOG     test [{...},{...}]
+[00:07:37.815] Server  LOG      ✓ Compiled in 27ms
+[00:07:41.732] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:07:41.732] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:07:45.860] Browser LOG     working 69129c42c25cf7822183796f
+[00:07:47.165] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"foodName\":\"steak\",\"price\":\"69999\",\"ingredients\":\"beef\",\"category\":\"69129c42c25cf7822183796f\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/food/create","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"data":{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"steak","ingredients":"beef","price":69999,"updatedAt":"2025-11-12T03:51:03.449Z"},"message":"food successfully created"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"259","content-type":"application/json; charset=utf-8"},"request":{},"status":201,"statusText":""}
+[00:07:47.803] Server  LOG     Categories {}
+[00:07:47.805] Server  LOG     test [{...},{...}]
+[00:07:48.005] Browser ERROR   uncaughtError: ReferenceError: CategoriesNamesContext is not defined
+[00:08:02.433] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:02.557] Server  LOG      ✓ Compiled in 24ms
+[00:08:02.579] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:08:02.579] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:08:03.236] Server  LOG     Categories {}
+[00:08:03.237] Server  LOG     test [{...},{...}]
+[00:08:03.310] Server  ERROR    ⨯ ReferenceError: CategoriesNamesContext is not defined
+[00:08:03.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:03.605] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:08:03.605] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:08:04.747] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Primitive.div`.  It was passed a child from Edit.
+[00:08:04.747] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `select`.  It was passed a child from SelectItemText.
+[00:08:36.621] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:08:36.621] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:08:39.014] Browser LOG     working
+[00:08:39.873] Browser LOG     category data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"categoryName\":\"Seafood\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/category","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":{"message":"food category successfully added"},"headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"46","content-type":"application/json; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:08:40.587] Server  LOG     Categories {}
+[00:08:40.588] Server  LOG     test [{...},{...},{...}]
+[00:08:40.733] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:08:40.733] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:09:07.435] Server  LOG     Categories {}
+[00:09:07.435] Server  LOG     category name
+[00:09:07.435] Server  LOG     test [{...},{...},{...}]
+[00:09:07.559] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:09:07.559] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:09:17.241] Server  LOG     Categories {}
+[00:09:17.242] Server  LOG     category names ["Main course","Salad","Seafood"]
+[00:09:17.243] Server  LOG     test [{...},{...},{...}]
+[00:09:17.382] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:09:17.382] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:09:56.247] Server  LOG      ✓ Compiled in 39ms
+[00:09:56.326] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:09:56.326] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:11:28.448] Server  LOG     Categories {}
+[00:11:28.448] Server  LOG     category names ["Main course","Salad","Seafood"]
+[00:11:28.449] Server  LOG     test [{...},{...},{...}]
+[00:11:28.620] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:11:28.620] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:14:58.374] Server  LOG     Categories {}
+[00:14:58.374] Server  LOG     category names ["Main course","Salad","Seafood"]
+[00:14:58.375] Server  LOG     test [{...},{...},{...}]
+[00:14:58.382] Server  ERROR    ⨯ ReferenceError: CurrentCategory is not defined
+[00:14:58.560] Browser ERROR   uncaughtError: ReferenceError: CurrentCategory is not defined
+[00:15:23.149] Server  LOG     Categories {}
+[00:15:23.149] Server  LOG     category names ["Main course","Salad","Seafood"]
+[00:15:23.150] Server  LOG     test [{...},{...},{...}]
+[00:15:23.246] Server  LOG     populated category "69129c42c25cf7822183796f"
+[00:15:23.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:23.769] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:15:23.769] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:15:59.944] Server  LOG      ✓ Compiled in 16ms
+[00:16:00.022] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:16:00.022] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:16:13.030] Server  LOG      ✓ Compiled in 15ms
+[00:16:13.110] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:16:13.110] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:16:15.053] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Primitive.div`.  It was passed a child from Edit.
+[00:16:44.809] Server  LOG      ✓ Compiled in 21ms
+[00:16:44.889] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:16:44.889] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:06.366] Server  LOG      ✓ Compiled in 30ms
+[00:17:06.737] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:06.737] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:15.357] Server  LOG      ✓ Compiled in 16ms
+[00:17:15.736] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:15.736] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:21.046] Server  LOG     Categories {}
+[00:17:21.047] Server  LOG     category names ["Main course","Salad","Seafood"]
+[00:17:21.048] Server  LOG     test [{...},{...},{...}]
+[00:17:21.157] Server  LOG     populated category "69129c42c25cf7822183796f"
+[00:17:21.411] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:21.563] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:21.563] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:23.063] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Primitive.div`.  It was passed a child from Edit.
+[00:17:33.252] Server  LOG      ✓ Compiled in 31ms
+[00:17:33.329] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:17:33.329] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:20:29.309] Server  LOG      ✓ Compiled in 54ms
+[00:20:29.737] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:20:29.737] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:20:42.989] Server  LOG      ✓ Compiled in 27ms
+[00:20:43.738] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:20:43.738] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:20:57.571] Server  LOG      ✓ Compiled in 36ms
+[00:20:57.655] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:20:57.655] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:21:19.211] Server  LOG      ✓ Compiled in 21ms
+[00:21:19.288] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:21:19.288] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:21:24.599] Server  LOG      ✓ Compiled in 59ms
+[00:21:24.675] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:21:24.675] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:21:35.442] Server  LOG      ✓ Compiled in 19ms
+[00:21:35.520] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:21:35.521] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:22:11.121] Server  LOG      ✓ Compiled in 52ms
+[00:22:11.192] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:22:11.192] Browser LOG     populated category 69129c42c25cf7822183796f
+[00:22:47.421] Browser LOG     food edited successfully
+[00:22:48.611] Server  LOG     Categories {}
+[00:22:48.612] Server  LOG     category names ["Main course","Salad","Seafood"]
+[00:22:48.614] Server  LOG     test [{...},{...},{...}]

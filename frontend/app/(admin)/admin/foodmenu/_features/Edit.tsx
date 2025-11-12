@@ -23,11 +23,12 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { Category } from "@/lib/types";
+import { useContext } from "react";
 
-export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, categories }) {
+export function Edit(props: { Food:  {foodName:string, price:number, ingredients:string, image:string, _id:string, category:string}, Categories:Category[], CategoriesNames:string[], CurrentCategory:string }) {
   const router = useRouter()
-  const { foodName, price, ingredients, image, _id, category, } = props.Food;
-  const {categories} = props
+  const {Categories, Food, CategoriesNames, CurrentCategory} = props
+  const { foodName, price, ingredients, image, _id, category, } = Food;
   console.log("populated category", category);
 
   
@@ -101,14 +102,13 @@ export function Edit(props: { Food:  {foodName:string, price:number, ingredients
             </div>
             <div className="grid gap-3">
               <Label htmlFor="category">Dish category</Label>
-              <Input id="category" name="category" defaultValue={category} />
-                <Select >
+                <Select defaultValue={CurrentCategory}>
                   <SelectTrigger className="w-[180px]">
-                    <SelectValue  defaultValue="main"  />
+                    <SelectValue  placeholder="Change category?"  />
                   </SelectTrigger>
-                  <SelectContent>
-                    {categories.map((category)=>{
-                      return(<SelectItem value={category.name} >{category.name} </SelectItem>)
+                  <SelectContent >
+                    {CategoriesNames.map((CategoryName)=>{
+                      return(<SelectItem value={CategoryName} >{CategoryName} </SelectItem>)
                     })}
                     {/* <SelectItem value="light">Light</SelectItem>
                     <SelectItem value="dark">Dark</SelectItem>
