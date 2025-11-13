@@ -1,6 +1,6 @@
 export function SideBar() {
   return (
-    <div>
+    <div className="w-[205px] bg-white ">
       <p>sidebar</p>
     </div>
   );

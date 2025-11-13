@@ -20,7 +20,7 @@ export const getFoodCategory = async (req, res) => {
 
   try {
     // const result = await Category.find();
-    
+
     const result = await Category.aggregate([
       {
         $lookup:
@@ -39,8 +39,7 @@ export const getFoodCategory = async (req, res) => {
             as: "foods",
           },
       },
-
-    ])
+    ]);
     res.send(result);
   } catch (error) {
     res.status(500).send("error getting food categories");

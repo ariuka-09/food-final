@@ -8,7 +8,7 @@ export const createFood = async (req, res) => {
       foodName: foodName,
       price: price,
       ingredients: ingredients,
-      category:category,
+      category: category,
     });
     res.status(201).send({ message: "food successfully created", data: food });
   } catch (error) {
@@ -33,10 +33,9 @@ export const updateFood = async (req, res) => {
 
   try {
     await Food.findByIdAndUpdate(id, body);
-    res.status(200).send({message:"updated successfully", data:body});
-
+    res.status(200).send({ message: "updated successfully", data: body });
   } catch (error) {
-    res.status(500).send({message:"wasnt updated", error:error});
+    res.status(500).send({ message: "wasnt updated", error: error });
   }
 };
 export const deleteFood = async (req, res) => {

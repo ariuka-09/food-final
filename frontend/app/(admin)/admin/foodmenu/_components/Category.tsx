@@ -24,9 +24,7 @@ export function Category(props: {
       <h4 className="text-5 font-semibold">Dishes category</h4>
       <div className="flex gap-3 flex-wrap w-fit">
         {Categories.map((Category) => {
-          return (
-            <CategoryCard key={Category._id} Category={Category}/>
-          );
+          return <CategoryCard key={Category._id} Category={Category} />;
         })}
         <AddCategory />
       </div>

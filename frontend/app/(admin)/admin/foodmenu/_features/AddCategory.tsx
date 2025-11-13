@@ -15,7 +15,7 @@ import { axiosInstance } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 
 export function AddCategory() {
-  const router = useRouter()
+  const router = useRouter();
   const AddNewCategory = async (
     event: React.SyntheticEvent<HTMLFormElement>
   ) => {
@@ -26,7 +26,7 @@ export function AddCategory() {
     const data = await axiosInstance.post(`/category`, { categoryName });
 
     console.log("category data", data);
-    router.refresh()
+    router.refresh();
     // window.location.href = "";
   };
 

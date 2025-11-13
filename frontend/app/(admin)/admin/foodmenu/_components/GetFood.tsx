@@ -3,9 +3,11 @@ import { Food, Category } from "@/lib/types";
 import { FoodcardForAdmin } from "../_features/FoodCardForAdmin";
 import { axiosInstance } from "@/lib/utils";
 
-export function GetFood(props:{Categories:Category[], CategoriesNamesAndId:{categoryName:string, categoryId:string}, }) {
-  
-  const {Categories, CategoriesNamesAndId} = props;
+export function GetFood(props: {
+  Categories: Category[];
+  CategoriesNamesAndId: { categoryName: string; categoryId: string };
+}) {
+  const { Categories, CategoriesNamesAndId } = props;
   console.log("get food deer", CategoriesNamesAndId);
 
   // const categories = await axiosInstance.get<Category[]>(
@@ -27,12 +29,21 @@ export function GetFood(props:{Categories:Category[], CategoriesNamesAndId:{cate
               </div>
               <div className="flex flex-wrap gap-4">
                 <AddFood Category={Category} />
-                {foods && foods.map((food) => {
-                  return <FoodcardForAdmin key={food._id}  Food={food} Categories={Categories} CategoriesNamesAndId={CategoriesNamesAndId} CurrentCategory={{name:categoryName, id:_id}} />;
-                  // if (_id == category._id) {
-                  //   return <FoodcardForAdmin key={food._id} Food={food} />;
-                  // }
-                })}
+                {foods &&
+                  foods.map((food) => {
+                    return (
+                      <FoodcardForAdmin
+                        key={food._id}
+                        Food={food}
+                        Categories={Categories}
+                        CategoriesNamesAndId={CategoriesNamesAndId}
+                        CurrentCategory={{ name: categoryName, id: _id }}
+                      />
+                    );
+                    // if (_id == category._id) {
+                    //   return <FoodcardForAdmin key={food._id} Food={food} />;
+                    // }
+                  })}
               </div>
             </div>
           );

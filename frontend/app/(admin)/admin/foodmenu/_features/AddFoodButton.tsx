@@ -12,15 +12,13 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {  axiosInstance } from "@/lib/utils";
+import { axiosInstance } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 
 export function AddFoodButton(props: { category: string }) {
-  const router = useRouter()
+  const router = useRouter();
   const { category } = props;
-  const AddNewFood = async (
-    event: React.SyntheticEvent<HTMLFormElement>
-  ) => {
+  const AddNewFood = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     console.log("working", category);
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -37,12 +35,9 @@ export function AddFoodButton(props: { category: string }) {
         category: category,
       });
       console.log("category data", data);
-      router.refresh()
+      router.refresh();
       // window.location.replace("")
-    } catch (error) {
-      
-    }
-
+    } catch (error) {}
   };
 
   return (
