@@ -1,3 +1,4 @@
+import { AddFood } from "@/_features/AddFood";
 import { Food } from "@/lib/types";
 
 export const Foodcard = (props: { Food: Food }) => {
@@ -10,9 +11,7 @@ export const Foodcard = (props: { Food: Food }) => {
           className="h-full w-full object-cover rounded-[20px] "
           alt=""
         />
-        <button className="w-11 h-11 rounded-[50%] bg-white text-[#EF4444] z-1 absolute right-3 bottom-3 text-[16px]">
-          +
-        </button>
+        <AddFood Food={props.Food} />
         {/* the adding logic will be done here  */}
       </div>
       <div>

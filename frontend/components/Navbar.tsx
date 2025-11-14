@@ -1,3 +1,5 @@
+import { OrderDetail } from "@/_features/OrderDetail";
+
 export const Navbar = () => {
   return (
     <div className="bg-[#18181B] px-22 py-3 flex justify-between">
@@ -14,7 +16,7 @@ export const Navbar = () => {
       <div className="flex h-fit gap-[12.81px]">
         <input type="location" className="" />
         <button className="bg-[#F4F4F5] p-2 rounded-[50%]">
-          <img src="/shopping-cart.svg" alt="" />
+          <OrderDetail />
         </button>
         <button className="bg-[#ef4444] p-2 rounded-[50%]">
           <img src="/user.svg" alt="" />
