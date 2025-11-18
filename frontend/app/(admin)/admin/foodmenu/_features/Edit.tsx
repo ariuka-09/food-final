@@ -47,7 +47,7 @@ export function Edit(props: {
   const [categoryNameAndId, setCategoryNameAndId] = useState(
     CurrentCategory.id
   );
-  const handleCategoryChange = (event) => {
+  const handleCategoryChange = (event: any) => {
     setCategoryNameAndId(event);
     console.log("event", event);
   };

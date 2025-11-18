@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -21,22 +22,46 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { Food } from "@/lib/types";
+import { FoodCardForOrderDetails } from "./FoodCardForOrderDetails";
+import { ScrollArea } from "@/components/ui/scroll-area";
 export function OrderDetail() {
+  const foodsFromLocalStorage = JSON.parse(localStorage.getItem("foods"));
+  console.log(foodsFromLocalStorage, "foods from ls");
+
   return (
     <div>
       <Drawer>
         <DrawerTrigger asChild>
           <img src="/shopping-cart.svg" alt="" />
         </DrawerTrigger>
-        <DrawerContent>
+        <DrawerContent className="w-[30%] px-8">
           <DrawerHeader>
             <DrawerTitle>Are you absolutely sure?</DrawerTitle>
             <DrawerDescription>This action cannot be undone.</DrawerDescription>
           </DrawerHeader>
+
+          <ScrollArea className="h-100 w-full rounded-md border">
+            <div>
+              <p>My Cart</p>
+              <div className="flex flex-col gap-5">
+                {foodsFromLocalStorage.map((food: Food) => {
+                  return <FoodCardForOrderDetails food={food} />;
+                })}
+              </div>
+            </div>
+          </ScrollArea>
+          <div>
+            <form action="">
+              <Label htmlFor="address">Add your address</Label>
+              <Input id="address"></Input>
+            </form>
+          </div>
           <DrawerFooter>
-            <Button>Submit</Button>
             <DrawerClose>
-              <Button variant="outline">Cancel</Button>
+              <Button variant="destructive" className="w-full">
+                Checkout
+              </Button>
             </DrawerClose>
           </DrawerFooter>
         </DrawerContent>

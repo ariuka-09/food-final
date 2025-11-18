@@ -12,7 +12,7 @@ export default async function AdminPage() {
   // console.log("category names", CategoriesNames);
 
   return (
-    <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6">
+    <div className="bg-[#F4F4F5] h-screen flex flex-col p-6 gap-6 w-full">
       <Category Categories={Categories.data} />
       <GetFood
         Categories={Categories.data}

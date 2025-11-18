@@ -18,7 +18,7 @@ export function GetFood(props: {
   // console.log("foods", foods, "categories", foodCategories);
 
   return (
-    <div className="bg-[#ffffff] rounded-[20px] p-5">
+    <div className="bg-[#ffffff] rounded-[20px] p-5 ">
       <div className="flex flex-col gap-10">
         {Categories.map((Category) => {
           const { _id, categoryName, foods } = Category;

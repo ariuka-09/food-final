@@ -15,10 +15,12 @@ import { Label } from "@/components/ui/label";
 import { Food } from "@/lib/types";
 import { useEffect, useState } from "react";
 import { AddToCart } from "./AddToCart";
+import { useRouter } from "next/navigation";
 
 export function AddFood(props: { Food: Food }) {
   const { foodName, ingredients, image, price } = props.Food;
   const [count, setCount] = useState(1);
+  const router = useRouter();
 
   const handleDecrease = () => {
     setCount(count - 1);
@@ -34,6 +36,7 @@ export function AddFood(props: { Food: Food }) {
     }
     const jsonFoods = JSON.stringify(retrievedFoods);
     localStorage.setItem("foods", jsonFoods);
+    router.refresh();
   };
   return (
     <Dialog>
@@ -78,7 +81,7 @@ export function AddFood(props: { Food: Food }) {
                   )}
 
                   <p>{count} </p>
-                  <button onClick={handleIncrease}>increa se</button>
+                  <button onClick={handleIncrease}>increase</button>
                 </div>
               </div>
             </div>
