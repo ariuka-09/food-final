@@ -27,8 +27,10 @@ import { FoodCardForOrderDetails } from "./FoodCardForOrderDetails";
 import { ScrollArea } from "@/components/ui/scroll-area";
 export function OrderDetail() {
   const foodsFromLocalStorage = JSON.parse(localStorage.getItem("foods"));
-  console.log(foodsFromLocalStorage, "foods from ls");
 
+  const handleAddress = (event) => {
+    localStorage.setItem("address", event.target.value);
+  };
   return (
     <div>
       <Drawer>
@@ -41,7 +43,7 @@ export function OrderDetail() {
             <DrawerDescription>This action cannot be undone.</DrawerDescription>
           </DrawerHeader>
 
-          <ScrollArea className="h-100 w-full rounded-md border">
+          <ScrollArea className="h-100 w-full rounded-md border p-4">
             <div>
               <p>My Cart</p>
               <div className="flex flex-col gap-5">
@@ -54,7 +56,11 @@ export function OrderDetail() {
           <div>
             <form action="">
               <Label htmlFor="address">Add your address</Label>
-              <Input id="address"></Input>
+              <Input
+                id="address"
+                onChange={handleAddress}
+                value={localStorage.getItem("address")}
+              ></Input>
             </form>
           </div>
           <DrawerFooter>
