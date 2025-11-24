@@ -1,5 +1,153 @@
-[00:00:00.832] Server  LOG      ✓ Ready in 615ms
-[00:00:04.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:04.769] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:04.954] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:14.608] Browser LOG     error {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"email\":\"ariuntuguldur2009@gmail.com\",\"password\":\"123123\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/user/signIn","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_16a4dcd0._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_16a4dcd0._.js:4221:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_16a4dcd0._.js:5025:49)\n    at async logIn (http://localhost:3000/_next/static/chunks/_7d670306._.js:55:30)","status":404}
+[00:00:00.750] Server  LOG      ✓ Ready in 555ms
+[00:00:07.531] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:00:07.645] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.194] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:15.194] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:22.866] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:32.131] Browser LOG     error {"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"email\":\"ariuntuguldur2009@gmail.com\",\"password\":\"123123\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/user/signIn","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_16a4dcd0._.js:3706:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_16a4dcd0._.js:4221:174)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_16a4dcd0._.js:5025:49)\n    at async logIn (http://localhost:3000/_next/static/chunks/_7d670306._.js:55:30)","status":404}
+[00:01:02.419] Server  LOG     currentIndex 0
+[00:01:02.691] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:02.812] Browser LOG     currentIndex 0
+[00:01:02.812] Browser LOG     currentIndex 0
+[00:01:05.967] Browser LOG     email ariuntuguldur2009@gmail.com
+[00:01:08.380] Browser LOG     current index 1
+[00:01:08.380] Browser LOG     pass 123123
+[00:01:08.380] Browser LOG     password created 123123
+[00:01:09.406] Browser LOG     data {"config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"baseURL":"https://food-final-backend.vercel.app/","data":"{\"email\":\"ariuntuguldur2009@gmail.com\",\"password\":\"123123\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"/user/signUp","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"data":"User successfully created","headers":{"cache-control":"public, max-age=0, must-revalidate","content-length":"25","content-type":"text/html; charset=utf-8"},"request":{},"status":200,"statusText":""}
+[00:02:48.719] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:02:48.719] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:02:51.154] Browser LOG     
+[00:02:51.442] Browser LOG     s
+[00:02:52.218] Browser LOG     sb
+[00:02:52.455] Browser LOG     sbd
+[00:02:52.698] Browser LOG     sbd 
+[00:02:53.547] Browser LOG     sbd 9
+[00:02:53.725] Browser LOG     sbd 9h
+[00:02:53.846] Browser LOG     sbd 9ho
+[00:02:53.958] Browser LOG     sbd 9hor
+[00:02:54.109] Browser LOG     sbd 9horo
+[00:02:54.343] Browser LOG     sbd 9horoo
+[00:02:54.660] Browser LOG     sbd 9horoo 
+[00:02:55.019] Browser LOG     sbd 9horoo 2
+[00:02:55.235] Browser LOG     sbd 9horoo 26
+[00:02:56.882] Browser LOG     token 692405fd9eecbca25406a1b8
+[00:03:13.085] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `OrderDetail`. 
+[00:03:13.086] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
+      <Presence present={true}>
+        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
+          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
+                      <DrawerHeader>
+                      <ScrollArea>
+                      <div>
+                      <DrawerFooter>
+                        <div className="mt-auto fl...">
+                          <DialogClose>
+                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
+>                             <button type="button" onClick={function handleEvent} ref={null}>
+                                <Button variant="destructive" className="w-full">
+>                                 <button
+>                                   data-slot="button"
+>                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                 >
+        ...
+
+[00:03:13.086] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:06:26.446] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:06:26.700] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:27.970] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:27.970] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:30.897] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `OrderDetail`. 
+[00:06:30.897] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
+[00:06:30.897] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
+      <Presence present={true}>
+        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
+          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
+                      <DrawerHeader>
+                      <ScrollArea>
+                      <div>
+                      <DrawerFooter>
+                        <div className="mt-auto fl...">
+                          <DialogClose>
+                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
+>                             <button type="button" onClick={function handleEvent} ref={null}>
+                                <Button variant="destructive" className="w-full">
+>                                 <button
+>                                   data-slot="button"
+>                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                 >
+        ...
+
+[00:06:30.897] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:09:42.167] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:09:42.373] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:42.644] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'map')
+[00:10:23.468] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:10:23.664] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:23.904] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'map')
+[00:10:35.404] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:10:35.645] Server  LOG      ✓ Compiled in 95ms
+[00:10:37.208] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:10:37.424] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:44.325] Server  LOG      ✓ Compiled in 47ms
+[00:10:45.975] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:10:45.975] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:10:50.167] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `OrderDetail`. 
+[00:10:50.167] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
+[00:10:50.167] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
+      <Presence present={true}>
+        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
+          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
+                      <DrawerHeader>
+                      <ScrollArea>
+                      <div>
+                      <DrawerFooter>
+                        <div className="mt-auto fl...">
+                          <DialogClose>
+                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
+>                             <button type="button" onClick={function handleEvent} ref={null}>
+                                <Button variant="destructive" className="w-full">
+>                                 <button
+>                                   data-slot="button"
+>                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                 >
+        ...
+
+[00:10:50.167] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:11:57.925] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:11:57.926] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
