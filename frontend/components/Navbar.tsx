@@ -13,12 +13,23 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { axiosInstance } from "@/lib/utils";
 import { useState } from "react";
+import { jwtDecode } from "jwt-decode";
 
 export const Navbar = () => {
   const [address, setAddress] = useState("");
-  const addAddress = () => {
-    const token = localStorage.getItem("token");
+  const addAddress = async () => {
+    const token = localStorage.getItem("token") as any;
+    const decodedToken = jwtDecode(token) as any;
+    console.log("token", decodedToken._id);
+    try {
+      const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
+        address: address,
+      });
+    } catch (error) {
+      console.log("error", error);
+    }
   };
   return (
     <div className="bg-[#18181B] px-22 py-3 flex justify-between">
@@ -44,7 +55,7 @@ export const Navbar = () => {
             <DialogHeader>
               <DialogTitle>Please write your delivery address!</DialogTitle>
             </DialogHeader>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col  gap-2">
               <div className="flex flex-col gap-3 w-full">
                 <Label htmlFor="link" className="sr-only">
                   Link
@@ -54,11 +65,21 @@ export const Navbar = () => {
                   value={address}
                   onChange={(e) => {
                     setAddress(e.target.value);
+                    console.log(address);
                   }}
                 />
+              </div>
+              <div className="flex gap-4 w-full justify-end">
                 <DialogClose asChild>
-                  <Button onClick={addAddress} className="w-fit">
-                    Close
+                  <Button className="w-fit">Close</Button>
+                </DialogClose>
+                <DialogClose asChild>
+                  <Button
+                    onClick={addAddress}
+                    variant="outline"
+                    className="w-fit"
+                  >
+                    Add address
                   </Button>
                 </DialogClose>
               </div>

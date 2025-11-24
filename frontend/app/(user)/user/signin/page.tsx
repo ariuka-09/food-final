@@ -1,9 +1,9 @@
 "use client";
-import {  axiosInstance } from "@/lib/utils";
+import { axiosInstance } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 
 export default function LogInPage() {
-      const router = useRouter()
+  const router = useRouter();
 
   const logIn = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -13,15 +13,14 @@ export default function LogInPage() {
     const password = formData.get("password");
     // const email = data.get('email')
     try {
-      const { data } = await axiosInstance.post(`/user/logIn`, {
+      const { data } = await axiosInstance.post(`/user/signIn`, {
         email: email,
         password: password,
       });
       const { token } = data;
       localStorage.setItem("token", token);
-      router.push('/')
+      router.push("/");
       // window.location.href = "..";
-
     } catch (error) {
       console.log("error", error);
     }
