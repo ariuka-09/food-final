@@ -25,11 +25,43 @@ import {
 import { Food } from "@/lib/types";
 import { FoodCardForOrderDetails } from "./FoodCardForOrderDetails";
 import { ScrollArea } from "@/components/ui/scroll-area";
-export function OrderDetail() {
-  const foodsFromLocalStorage = JSON.parse(localStorage.getItem("foods"));
+import { jwtDecode } from "jwt-decode";
+import { axiosInstance } from "@/lib/utils";
+import { useEffect, useState } from "react";
+export function OrderDetail(props: {
+  address: string;
+  setAddress: React.Dispatch<React.SetStateAction<string>>;
+}) {
+  const { address, setAddress } = props;
+  // const [address, setAddress] = useState("");
+  useEffect(() => {
+    const stored = localStorage.getItem("address");
+    console.log(stored);
 
-  const handleAddress = (event) => {
-    localStorage.setItem("address", event.target.value);
+    if (stored) {
+      setAddress(stored);
+    }
+  }, []);
+  const foodsFromLocalStorage = JSON.parse(
+    localStorage.getItem("foods") || "[]"
+  );
+
+  const handleAddress = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    localStorage.setItem("address", value);
+    setAddress(value);
+  };
+  const addAddress = async () => {
+    const token = localStorage.getItem("token") as any;
+    const decodedToken = jwtDecode(token) as any;
+    console.log("token", decodedToken._id);
+    try {
+      const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
+        address: address,
+      });
+    } catch (error) {
+      console.log("error", error);
+    }
   };
   return (
     <div>
@@ -59,7 +91,7 @@ export function OrderDetail() {
               <Input
                 id="address"
                 onChange={handleAddress}
-                value={localStorage.getItem("address")}
+                value={address}
               ></Input>
             </form>
           </div>

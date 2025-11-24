@@ -20,16 +20,17 @@ import { jwtDecode } from "jwt-decode";
 export const Navbar = () => {
   const [address, setAddress] = useState("");
   const addAddress = async () => {
-    const token = localStorage.getItem("token") as any;
-    const decodedToken = jwtDecode(token) as any;
-    console.log("token", decodedToken._id);
-    try {
-      const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
-        address: address,
-      });
-    } catch (error) {
-      console.log("error", error);
-    }
+    // const token = localStorage.getItem("token") as any;
+    // const decodedToken = jwtDecode(token) as any;
+    // console.log("token", decodedToken._id);
+    // try {
+    //   const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
+    //     address: address,
+    //   });
+    // } catch (error) {
+    //   console.log("error", error);
+    // }
+    localStorage.setItem("address", address);
   };
   return (
     <div className="bg-[#18181B] px-22 py-3 flex justify-between">
@@ -88,7 +89,7 @@ export const Navbar = () => {
           </DialogContent>
         </Dialog>
         <button className="bg-[#F4F4F5] p-2 rounded-[50%]">
-          <OrderDetail />
+          <OrderDetail address={address} setAddress={setAddress} />
         </button>
         <button className="bg-[#ef4444] p-2 rounded-[50%]">
           <img src="/user.svg" alt="" />
