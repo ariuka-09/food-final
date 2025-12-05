@@ -55,6 +55,8 @@ export function OrderDetail(props: {
     });
     console.log("foods", localStorage.getItem("foods"));
     localStorage.setItem("foods", "[]");
+    console.log("working!!");
+
     window.location.reload();
   };
 
