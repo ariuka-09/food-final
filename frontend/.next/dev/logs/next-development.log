@@ -1,14 +1,73 @@
-[00:00:01.132] Server  LOG      ✓ Ready in 801ms
-[00:00:04.934] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:00:05.211] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.326] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:45.566] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:02:45.566] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:02:48.505] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:00:00.951] Server  LOG      ✓ Ready in 737ms
+[00:00:30.405] Server  ERROR   Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+[00:00:30.405] Server  ERROR   Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+[00:00:30.698] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:30.820] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:00:30.820] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:00:31.008] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:00:31.008] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 
+[00:01:47.030] Server  LOG      ✓ Compiled in 58ms
+[00:01:47.784] Browser ERROR   uncaughtError: ReferenceError: DropdownMenuItem is not defined
+[00:01:52.121] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:52.312] Server  LOG      ✓ Compiled in 28ms
+[00:01:52.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:52.785] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:01:52.785] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:01:53.784] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:01:53.784] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 
+[00:01:58.932] Server  LOG      ✓ Compiled in 16ms
+[00:02:00.553] Server  LOG      ✓ Compiled in 18ms
+[00:02:54.106] Server  LOG      ✓ Compiled in 32ms
+[00:02:54.173] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'map')
+[00:03:06.804] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:07.131] Server  LOG      ✓ Compiled in 26ms
+[00:03:07.228] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:03:07.228] Browser ERROR   uncaughtError: ReferenceError: order is not defined
+[00:03:07.405] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:07.542] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:03:07.542] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:03:07.767] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:03:07.767] Browser ERROR   uncaughtError: ReferenceError: order is not defined
+[00:03:08.002] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:08.161] Server  LOG      ✓ Compiled in 72ms
+[00:03:08.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:08.570] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:03:08.570] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:03:08.753] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:03:08.753] Browser ERROR   uncaughtError: TypeError: undefined is not a function
+[00:03:16.996] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:17.024] Server  LOG      ✓ Compiled in 22ms
+[00:03:17.498] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:17.636] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:03:17.636] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:03:17.804] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:03:17.804] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 
+[00:04:08.057] Server  LOG      ✓ Compiled in 43ms
+[00:04:27.175] Server  LOG      ✓ Compiled in 77ms
+[00:05:11.904] Server  LOG      ✓ Compiled in 48ms
+[00:06:25.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:25.718] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:06:25.718] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:06:25.868] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:06:25.868] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 
+[00:06:28.682] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:06:28.700] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:06:28.825] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:29.481] Browser LOG     erdenet
+[00:06:31.810] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:31.810] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:06:34.453] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `OrderDetail`. 
-[00:02:48.505] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:02:48.505] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:06:34.454] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -29,20 +88,29 @@ This will cause a hydration error.%s <button> button
                           <DialogClose>
                             <Primitive.button type="button" ref={null} onClick={function handleEvent}>
 >                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
+                                <Button variant="destructive" className="w-full" onClick={function addOrder}>
 >                                 <button
 >                                   data-slot="button"
 >                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                   onClick={function addOrder}
 >                                 >
         ...
 
-[00:02:48.505] Browser ERROR   <%s> cannot contain a nested %s.
+[00:06:34.454] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[00:06:15.900] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:06:17.267] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:06:17.456] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:18.934] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:06:18.934] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:06:37.315] Browser LOG     user {"__v":0,"_id":"69245ec3928a3b7c124e9ee6","createdAt":"2025-11-24T13:33:55.681Z","email":"test","exp":1764904896,"iat":1764901296,"orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-11-24T13:33:55.681Z"}
+[00:06:37.315] Browser LOG     foods [{"_id":"6914523157f6887816eebf95","foodName":"gahai","price":10000,"ingredients":"tahia","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","updatedAt":"2025-11-13T01:54:40.927Z","__v":0},{"_id":"692d4d251d90cd1ffc679393","foodName":"gahain hoshuu","price":90009,"ingredients":"nohoi","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","updatedAt":"2025-12-05T03:06:31.741Z","__v":0},{"_id":"6914523157f6887816eebf95","foodName":"gahai","price":10000,"ingredients":"tahia","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","updatedAt":"2025-11-13T01:54:40.927Z","__v":0}]
+[00:06:42.325] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:42.452] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:06:42.452] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:06:42.615] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"693274ab1cdedb15117c96f1","createdAt":"2025-12-05T05:59:07.721Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T05:59:07.721Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:06:42.615] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 
+[00:06:58.217] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:06:58.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:59.415] Browser LOG     erdenet
+[00:07:08.090] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -63,66 +131,20 @@ This will cause a hydration error.%s <button> button
                           <DialogClose>
                             <Primitive.button type="button" ref={null} onClick={function handleEvent}>
 >                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
+                                <Button variant="destructive" className="w-full" onClick={function addOrder}>
 >                                 <button
 >                                   data-slot="button"
 >                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                   onClick={function addOrder}
 >                                 >
         ...
 
-[00:06:18.934] Browser ERROR   <%s> cannot contain a nested %s.
+[00:07:08.090] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[00:08:28.625] Server  LOG      ✓ Compiled in 66ms
-[00:08:28.731] Browser ERROR   ./frontend/components/Navbar.tsx:100:10
-Parsing ecmascript source code failed
-   98 |   );
-   99 | };
-> 100 | export   addAddress
-      |          ^^^^^^^^^^
-
-Expected '{', got 'addAddress'
-
-Import trace:
-  Server Component:
-    ./frontend/components/Navbar.tsx
-    ./frontend/app/page.tsx
-[00:08:32.687] Browser ERROR   ./frontend/components/Navbar.tsx:100:28
-Parsing ecmascript source code failed
-   98 |   );
-   99 | };
-> 100 | export  function addAddress
-      |                            ^
-
-Expected '(', got '<eof>'
-
-Import trace:
-  Server Component:
-    ./frontend/components/Navbar.tsx
-    ./frontend/app/page.tsx
-[00:08:45.738] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./frontend/components/Navbar.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:08:51.008] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:08:51.137] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:03.018] Server  LOG      ✓ Compiled in 28ms
-[00:09:03.128] Browser ERROR   ./frontend/components/Navbar.tsx:99:3
-Parsing ecmascript source code failed
-   97 |     </div>
-   98 |   );
->  99 |   export { addAddress };
-      |   ^^^^^^
-  100 | };
-  101 |
-
-'import', and 'export' cannot be used outside of module code
-
-Import trace:
-  Server Component:
-    ./frontend/components/Navbar.tsx
-    ./frontend/app/page.tsx
-[00:10:09.283] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./frontend/components/Navbar.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:10:10.894] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:10:11.023] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:10:11.851] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:10:11.851] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+[00:07:10.797] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:07:11.016] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:11.628] Browser LOG     erdenet
+[00:07:13.932] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
 This will cause a hydration error.%s <button> button 
 
   ...
@@ -143,676 +165,110 @@ This will cause a hydration error.%s <button> button
                           <DialogClose>
                             <Primitive.button type="button" ref={null} onClick={function handleEvent}>
 >                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
+                                <Button variant="destructive" className="w-full" onClick={function addOrder}>
 >                                 <button
 >                                   data-slot="button"
 >                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                   onClick={function addOrder}
 >                                 >
         ...
 
-[00:10:11.851] Browser ERROR   <%s> cannot contain a nested %s.
+[00:07:13.932] Browser ERROR   <%s> cannot contain a nested %s.
 See this log for the ancestor stack trace. button <button>
-[00:10:13.635] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:10:13.635] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:12:09.042] Server  LOG      ✓ Compiled in 41ms
-[00:12:59.399] Server  LOG      ✓ Compiled in 28ms
-[00:13:05.553] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:05.553] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:20.531] Browser LOG     
-[00:13:20.531] Browser LOG     a
-[00:13:20.531] Browser LOG     as
-[00:13:20.827] Browser LOG     asd
-[00:13:20.827] Browser LOG     asda
-[00:13:20.948] Browser LOG     asdas
-[00:13:21.063] Browser LOG     asdasd
-[00:13:21.245] Browser LOG     asdasda
-[00:13:21.245] Browser LOG     asdasdad
-[00:13:21.245] Browser LOG     asdasdada
-[00:13:21.576] Browser LOG     asdasdadas
-[00:13:21.576] Browser LOG     asdasdadasd
-[00:13:21.576] Browser LOG     asdasdadasda
-[00:13:21.576] Browser LOG     asdasdadasdas
-[00:13:21.766] Browser LOG     asdasdadasdasd
-[00:13:21.766] Browser LOG     asdasdadasdasda
-[00:13:21.766] Browser LOG     asdasdadasdasdas
-[00:13:21.937] Browser LOG     asdasdadasdasdasd
-[00:13:21.937] Browser LOG     asdasdadasdasdasda
-[00:13:53.154] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:13:53.154] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:14:02.431] Browser LOG     asdasdadasdasdasdas
-[00:14:03.482] Browser LOG     asdasdadasdasdasda
-[00:14:03.483] Browser LOG     asdasdadasdasdasd
-[00:14:03.483] Browser LOG     asdasdadasdasdas
-[00:14:03.483] Browser LOG     asdasdadasdasda
-[00:14:03.483] Browser LOG     asdasdadasdasd
-[00:14:03.483] Browser LOG     asdasdadasdas
-[00:14:03.483] Browser LOG     asdasdadasda
-[00:14:03.483] Browser LOG     asdasdadasd
-[00:14:03.483] Browser LOG     asdasdadas
-[00:14:03.483] Browser LOG     asdasdada
-[00:14:03.483] Browser LOG     asdasdad
-[00:14:03.483] Browser LOG     asdasda
-[00:14:03.483] Browser LOG     asdasd
-[00:14:03.483] Browser LOG     asdas
-[00:14:03.483] Browser LOG     asda
-[00:14:03.483] Browser LOG     asd
-[00:14:03.483] Browser LOG     as
-[00:14:03.483] Browser LOG     a
-[00:14:03.851] Browser LOG     
-[00:14:04.084] Browser LOG     s
-[00:14:04.286] Browser LOG     su
-[00:14:04.476] Browser LOG     suk
-[00:14:05.047] Browser LOG     sukh
-[00:14:05.047] Browser LOG     sukhb
-[00:14:05.201] Browser LOG     sukhba
-[00:14:05.448] Browser LOG     sukhbaa
-[00:14:05.448] Browser LOG     sukhbaat
-[00:14:06.021] Browser LOG     sukhbaata
-[00:16:10.476] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:16:10.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:11.813] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:16:11.813] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                    <div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" aria-labelledby="radix-_r_a_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:16:11.813] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:20:55.671] Server  LOG      ✓ Compiled in 58ms
-[00:20:55.718] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:21:04.490] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:04.490] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:05.950] Browser LOG     
-[00:21:21.165] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:21.165] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:23.679] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:23.679] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:39.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:21:39.965] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:22:21.833] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:22:21.833] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:22:52.090] Server  LOG      ✓ Compiled in 37ms
-[00:23:00.176] Server  LOG      ✓ Compiled in 33ms
-[00:23:00.217] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:23:24.516] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:23:24.745] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:23:26.218] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:23:26.219] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:23:26.219] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:23:57.289] Server  LOG      ✓ Compiled in 26ms
-[00:23:57.369] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:24:08.568] Server  LOG      ✓ Compiled in 32ms
-[00:24:08.614] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:24:44.915] Server  LOG      ✓ Compiled in 32ms
-[00:25:02.652] Server  LOG      ✓ Compiled in 47ms
-[00:28:24.138] Server  LOG      ✓ Compiled in 27ms
-[00:28:29.201] Server  LOG      ✓ Compiled in 26ms
-[00:29:08.625] Server  LOG      ✓ Compiled in 31ms
-[00:29:36.737] Server  LOG      ✓ Compiled in 28ms
-[00:34:43.346] Server  LOG      ✓ Compiled in 27ms
-[00:34:43.982] Browser ERROR   uncaughtError: ReferenceError: useState is not defined
-[00:34:47.586] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:34:47.813] Server  LOG      ✓ Compiled in 31ms
-[00:34:52.797] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:34:53.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:57.360] Server  LOG      ✓ Compiled in 26ms
-[00:37:02.415] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:37:02.415] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:37:07.311] Browser LOG     
-[00:37:07.494] Browser LOG     s
-[00:37:07.756] Browser LOG     sb
-[00:37:07.944] Browser LOG     sbd
-[00:37:08.344] Browser LOG     sbd 
-[00:37:08.717] Browser LOG     sbd 9
-[00:37:09.215] Browser LOG     sbd 9 
-[00:37:09.215] Browser LOG     sbd 9 h
-[00:37:09.215] Browser LOG     sbd 9 ho
-[00:37:09.340] Browser LOG     sbd 9 hor
-[00:37:09.480] Browser LOG     sbd 9 horo
-[00:37:13.346] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:37:13.346] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:38:54.018] Server  LOG      ✓ Compiled in 26ms
-[00:39:20.438] Server  LOG      ✓ Compiled in 29ms
-[00:39:20.983] Browser ERROR   uncaughtError: TypeError: create is not a function
-[00:40:19.113] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:40:19.314] Server  LOG      ✓ Compiled in 26ms
-[00:40:21.031] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:40:21.248] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:40:36.289] Server  LOG      ✓ Compiled in 26ms
-[00:40:41.188] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:40:41.188] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:40:43.243] Browser LOG     
-[00:40:44.581] Browser LOG     dadasdad
-[00:40:45.148] Browser LOG     
-[00:40:45.476] Browser LOG     9
-[00:40:45.631] Browser LOG     9r
-[00:40:46.036] Browser LOG     9r 
-[00:40:46.036] Browser LOG     9r h
-[00:40:46.251] Browser LOG     9r ho
-[00:40:46.251] Browser LOG     9r hor
-[00:40:46.404] Browser LOG     9r horo
-[00:40:51.326] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                    <div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" aria-labelledby="radix-_r_a_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:40:51.326] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:41:36.069] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:42:10.650] Server  LOG      ✓ Compiled in 26ms
-[00:42:17.788] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:42:17.788] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:42:36.905] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:42:37.159] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:37.819] Browser LOG     9r horoo
-[00:42:41.481] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:42:41.481] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:42:44.373] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:42:44.373] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:42:47.457] Browser LOG     
-[00:44:12.349] Server  LOG      ✓ Compiled in 28ms
-[00:44:12.453] Browser ERROR   uncaughtError: ReferenceError: stored is not defined
-[00:44:22.645] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:44:22.689] Server  LOG      ✓ Compiled in 29ms
-[00:44:22.785] Browser LOG     dadasdad
-[00:44:24.182] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:44:24.409] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:44:25.088] Browser LOG     dadasdad
-[00:44:35.068] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
-                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:44:35.068] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:45:59.234] Server  LOG      ✓ Compiled in 24ms
-[00:46:04.245] Server  LOG      ✓ Compiled in 24ms
-[00:48:21.123] Server  LOG      ✓ Compiled in 25ms
-[00:48:31.060] Browser ERROR   %s contains an input of type %s with both value and defaultValue props. Input elements must be either controlled or uncontrolled (specify either the value prop, or the defaultValue prop, but not both). Decide between using a controlled or uncontrolled input element and remove one of these props. More info: https://react.dev/link/controlled-components Input undefined
-[00:48:33.407] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:48:33.407] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:48:36.491] Browser LOG     
-[00:48:36.697] Browser LOG     s
-[00:48:36.697] Browser LOG     su
-[00:48:36.945] Browser LOG     suh
-[00:48:37.102] Browser LOG     suhi
-[00:48:37.226] Browser LOG     suhii
-[00:48:37.428] Browser LOG     suhiin
-[00:48:37.723] Browser LOG     suhiin 
-[00:48:50.114] Server  LOG      ✓ Compiled in 28ms
-[00:48:52.656] Server  LOG      ✓ Compiled in 24ms
-[00:48:57.975] Server  LOG      ✓ Compiled in 31ms
-[00:49:03.952] Server  LOG      ✓ Compiled in 36ms
-[00:49:03.977] Browser ERROR   A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:49:08.402] Server  LOG      ✓ Compiled in 25ms
-[00:49:19.660] Server  LOG      ✓ Compiled in 25ms
-[00:49:19.716] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:49:27.732] Server  LOG      ✓ Compiled in 24ms
-[00:49:31.443] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:49:31.444] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:49:33.547] Browser LOG     suhiin 9
-[00:49:34.262] Browser LOG     suhiin 9r
-[00:49:34.799] Browser LOG     suhiin 9r 
-[00:49:34.799] Browser LOG     suhiin 9r h
-[00:49:35.023] Browser LOG     suhiin 9r ho
-[00:49:35.194] Browser LOG     suhiin 9r hor
-[00:49:35.363] Browser LOG     suhiin 9r horo
-[00:50:09.596] Server  LOG      ✓ Compiled in 27ms
-[00:50:09.700] Browser ERROR   `value` prop on `%s` should not be null. Consider using an empty string to clear the component or `undefined` for uncontrolled components. input
-[00:50:13.233] Server  LOG      ✓ Compiled in 26ms
-[00:50:27.191] Server  LOG      ✓ Compiled in 31ms
-[00:52:09.427] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:52:09.427] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:52:19.104] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:52:19.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:52:19.572] Browser LOG     suhiin 9r horoo
-[00:52:20.421] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                    <div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" aria-labelledby="radix-_r_a_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:52:20.421] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:52:46.228] Server  LOG      ✓ Compiled in 29ms
-[00:52:49.151] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:52:49.151] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:52:51.217] Browser LOG     
-[00:52:56.719] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
-[00:52:56.955] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:52:57.193] Browser LOG     https://youtu.be/v0RLDMU9W78
-[00:52:58.066] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
-This will cause a hydration error.%s <button> button 
-
-  ...
-    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
-      <Presence present={true}>
-        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
-          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
-            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
-              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
-                <DismissableLayer role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                  <Primitive.div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" ...>
-                    <div role="dialog" id="radix-_r_9_" aria-describedby="radix-_r_b_" aria-labelledby="radix-_r_a_" ...>
-                      <DrawerHeader>
-                      <ScrollArea>
-                      <div>
-                      <DrawerFooter>
-                        <div className="mt-auto fl...">
-                          <DialogClose>
-                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
->                             <button type="button" onClick={function handleEvent} ref={null}>
-                                <Button variant="destructive" className="w-full">
->                                 <button
->                                   data-slot="button"
->                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
->                                 >
-        ...
-
-[00:52:58.067] Browser ERROR   <%s> cannot contain a nested %s.
-See this log for the ancestor stack trace. button <button>
-[00:53:46.487] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:53:46.487] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[00:57:25.959] Server  LOG      ✓ Compiled in 31ms
-[00:57:26.067] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:51
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address:adress)) {
-     |                                                   ^
-  32 |   const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:57:38.098] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:57
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddresas)) {
-     |                                                         ^
-  32 |   const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:57:39.286] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:55
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddres)) {
-     |                                                       ^
-  32 |   const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:57:40.126] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:56
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddress)) {
-     |                                                        ^
-  32 |   const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:57:48.655] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:56
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddress)) {
-     |                                                        ^
-  32 |   // const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:58:07.691] Server  LOG      ✓ Compiled in 25ms
-[00:58:07.800] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:56
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddress)) {
-     |                                                        ^
-  32 |   // const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:58:20.463] Server  LOG      ✓ Compiled in 29ms
-[00:58:20.572] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:56
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddress)) {
-     |                                                        ^
-  32 |   // const [address, setAddress] = useState("");
-  33 |   useEffect(() => {
-  34 |     const stored = localStorage.getItem("address");
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[00:58:48.586] Browser ERROR   ./frontend/_features/OrderDetail.tsx:31:56
-Parsing ecmascript source code failed
-  29 | import { axiosInstance } from "@/lib/utils";
-  30 | import { useEffect, useState } from "react";
-> 31 | export function OrderDetail(props:(address, setAddress)) {
-     |                                                        ^
-  32 |   const {address, setAddress} = props
-  33 |   // const [address, setAddress] = useState("");
-  34 |   useEffect(() => {
-
-Expected '=>', got ')'
-
-Import traces:
-  Client Component Browser:
-    ./frontend/_features/OrderDetail.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Client Component Browser]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./frontend/_features/OrderDetail.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Client Component SSR]
-    ./frontend/components/Navbar.tsx [Server Component]
-    ./frontend/app/page.tsx [Server Component]
-[01:00:27.985] Browser LOG     https://youtu.be/v0RLDMU9W78
-[01:00:41.818] Server  LOG      ✓ Compiled in 26ms
-[01:00:54.116] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:00:54.116] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:00:56.442] Browser LOG     https://youtu.be/v0RLDMU9W78
-[01:00:57.047] Browser LOG     
-[01:00:57.219] Browser LOG     s
-[01:00:57.623] Browser LOG     su
-[01:00:57.822] Browser LOG     suk
-[01:00:58.025] Browser LOG     sukh
-[01:00:58.181] Browser LOG     sukhi
-[01:00:58.337] Browser LOG     sukhii
-[01:00:58.539] Browser LOG     sukhiin
-[01:00:58.894] Browser LOG     sukhiin 
-[01:01:31.722] Server  LOG      ✓ Compiled in 31ms
-[01:01:34.617] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:01:34.617] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:01:36.188] Browser LOG     sukhiin 9
-[01:01:37.072] Browser LOG     sukhiin 9 
-[01:01:37.740] Browser LOG     sukhiin 9 2
-[01:01:37.927] Browser LOG     sukhiin 9 26
-[01:01:56.320] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:01:56.320] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
-[01:02:00.059] Browser LOG     
-[01:02:00.198] Browser LOG     s
-[01:02:00.324] Browser LOG     sb
-[01:02:00.712] Browser LOG     sbd
-[01:02:01.395] Browser LOG     sbd 
-[01:02:02.111] Browser LOG     sbd 2
-[01:02:02.250] Browser LOG     sbd 26
-[01:02:34.505] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+[00:07:19.979] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
 
 Check the render method of `OrderDetail`. 
+[00:07:21.932] Browser LOG     user {"__v":0,"_id":"69245ec3928a3b7c124e9ee6","createdAt":"2025-11-24T13:33:55.681Z","email":"test","exp":1764904896,"iat":1764901296,"orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-11-24T13:33:55.681Z"}
+[00:07:21.932] Browser LOG     foods [{"_id":"692d4d251d90cd1ffc679393","foodName":"gahain hoshuu","price":90009,"ingredients":"nohoi","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","updatedAt":"2025-12-05T03:06:31.741Z","__v":0},{"_id":"692d4d251d90cd1ffc679393","foodName":"gahain hoshuu","price":90009,"ingredients":"nohoi","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","updatedAt":"2025-12-05T03:06:31.741Z","__v":0},{"_id":"692d4d251d90cd1ffc679393","foodName":"gahain hoshuu","price":90009,"ingredients":"nohoi","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","updatedAt":"2025-12-05T03:06:31.741Z","__v":0},{"_id":"692d4d251d90cd1ffc679393","foodName":"gahain hoshuu","price":90009,"ingredients":"nohoi","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","updatedAt":"2025-12-05T03:06:31.741Z","__v":0}]
+[00:07:25.512] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:07:25.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:26.252] Browser LOG     erdenet
+[00:07:26.605] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
+      <Presence present={true}>
+        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
+          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
+                      <DrawerHeader>
+                      <ScrollArea>
+                      <div>
+                      <DrawerFooter>
+                        <div className="mt-auto fl...">
+                          <DialogClose>
+                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
+>                             <button type="button" onClick={function handleEvent} ref={null}>
+                                <Button variant="destructive" className="w-full" onClick={function addOrder}>
+>                                 <button
+>                                   data-slot="button"
+>                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                   onClick={function addOrder}
+>                                 >
+        ...
+
+[00:07:26.605] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:07:30.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:30.537] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:07:30.537] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:07:30.705] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"693274ab1cdedb15117c96f1","createdAt":"2025-12-05T05:59:07.721Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T05:59:07.721Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"693274d81cdedb15117c96fe","createdAt":"2025-12-05T05:59:52.289Z","foodOrderItems":[{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":360036,"updatedAt":"2025-12-05T05:59:52.289Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]}]
+[00:07:30.705] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 
+[00:08:04.705] Server  LOG      ✓ Compiled in 38ms
+[00:08:06.150] Server  LOG      ✓ Compiled in 22ms
+[00:08:14.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:30.995] Browser LOG     erdenet
+[00:08:30.995] Browser LOG     erdenet
+[00:08:32.549] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <button> button 
+
+  ...
+    <DialogContent data-vaul-drawer-direction="right" data-vaul-drawer="" data-vaul-delayed-snap-points="false" ...>
+      <Presence present={true}>
+        <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={function onOpenAutoFocus} ...>
+          <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+            <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+              <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+                <DismissableLayer role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                  <Primitive.div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" ...>
+                    <div role="dialog" id="radix-_r_3_" aria-describedby="radix-_r_5_" aria-labelledby="radix-_r_4_" ...>
+                      <DrawerHeader>
+                      <ScrollArea>
+                      <div>
+                      <DrawerFooter>
+                        <div className="mt-auto fl...">
+                          <DialogClose>
+                            <Primitive.button type="button" ref={null} onClick={function handleEvent}>
+>                             <button type="button" onClick={function handleEvent} ref={null}>
+                                <Button variant="destructive" className="w-full" onClick={function addOrder}>
+>                                 <button
+>                                   data-slot="button"
+>                                   className={"inline-flex items-center justify-center gap-2 whitespace-nowrap round..."}
+>                                   onClick={function addOrder}
+>                                 >
+        ...
+
+[00:08:32.549] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. button <button>
+[00:08:39.460] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `OrderDetail`. 
+[00:08:41.718] Browser LOG     user {"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","exp":1764918060,"iat":1764914460,"orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}
+[00:08:41.718] Browser LOG     foods [{"_id":"6914523157f6887816eebf95","foodName":"gahai","price":10000,"ingredients":"tahia","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","updatedAt":"2025-11-13T01:54:40.927Z","__v":0},{"_id":"6914523157f6887816eebf95","foodName":"gahai","price":10000,"ingredients":"tahia","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","updatedAt":"2025-11-13T01:54:40.927Z","__v":0},{"_id":"6914523157f6887816eebf95","foodName":"gahai","price":10000,"ingredients":"tahia","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","updatedAt":"2025-11-13T01:54:40.927Z","__v":0},{"_id":"6914523157f6887816eebf95","foodName":"gahai","price":10000,"ingredients":"tahia","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","updatedAt":"2025-11-13T01:54:40.927Z","__v":0}]
+[00:08:42.020] Server  ERROR    ⨯ ReferenceError: localStorage is not defined
+[00:08:42.164] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:42.722] Browser LOG     erdenet
+[00:08:45.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:45.896] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linecap strokeLinecap
+[00:08:45.896] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? stroke-linejoin strokeLinejoin
+[00:08:46.039] Browser LOG     orders [{"__v":0,"_id":"691561e98de19d3c0c1c1b72","createdAt":"2025-11-13T04:43:21.787Z","foodOrderItems":[],"status":"DELIVERED","totalPrice":99000,"updatedAt":"2025-11-14T01:20:20.859Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]},{"__v":0,"_id":"69324b84f7edc4ed9b46444b","createdAt":"2025-12-05T03:03:32.931Z","foodOrderItems":[{"__v":0,"_id":"69140427d53e8d624e0b423c","category":"69129c42c25cf7822183796f","createdAt":"2025-11-12T03:51:03.449Z","foodName":"tahiap","ingredients":"tahiasaad","price":1000,"updatedAt":"2025-11-18T12:56:48.143Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"69129c42c25cf7822183796f","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-01T08:09:27.347Z"}],"status":"PENDING","totalPrice":361036,"updatedAt":"2025-12-05T03:03:32.931Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325e5739a9acdd1eb4f503","createdAt":"2025-12-05T04:23:51.155Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":100009,"updatedAt":"2025-12-05T04:23:51.155Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"69325ea9f602485ac74a060f","createdAt":"2025-12-05T04:25:13.775Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T04:25:13.775Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"693274ab1cdedb15117c96f1","createdAt":"2025-12-05T05:59:07.721Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":110009,"updatedAt":"2025-12-05T05:59:07.721Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"693274d81cdedb15117c96fe","createdAt":"2025-12-05T05:59:52.289Z","foodOrderItems":[{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"},{"__v":0,"_id":"692d4d251d90cd1ffc679393","category":"691c6d2c1779798dd2f59f81","createdAt":"2025-12-01T08:09:09.165Z","foodName":"gahain hoshuu","ingredients":"nohoi","price":90009,"updatedAt":"2025-12-05T03:06:31.741Z"}],"status":"PENDING","totalPrice":360036,"updatedAt":"2025-12-05T05:59:52.289Z","user":[{"__v":0,"_id":"69245ec3928a3b7c124e9ee6","address":"erdenet","createdAt":"2025-11-24T13:33:55.681Z","email":"test","orderedFoods":[],"password":"$2b$10$zgfn9tFBoKvj9c5ksTD1keELM2UNN/FnF9JzWMSO2rcXhe1je7l5e","role":"user","updatedAt":"2025-12-05T03:11:28.039Z"}]},{"__v":0,"_id":"693275281cdedb15117c970c","createdAt":"2025-12-05T06:01:12.177Z","foodOrderItems":[{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"},{"__v":0,"_id":"6914523157f6887816eebf95","category":"69129e237e81eff15714365c","createdAt":"2025-11-12T09:24:01.329Z","foodName":"gahai","ingredients":"tahia","price":10000,"updatedAt":"2025-11-13T01:54:40.927Z"}],"status":"PENDING","totalPrice":40000,"updatedAt":"2025-12-05T06:01:12.177Z","user":[{"__v":0,"_id":"69155c842746d0dff7f07963","address":"sbd 9horoo","createdAt":"2025-11-13T04:20:20.846Z","email":"admin","orderedFoods":[],"password":"$2b$10$MGq/3nGQHPAZIVWu6Yds.uWd4obySl8T.jLAdsz88s.ermxizXAj.","role":"user","updatedAt":"2025-11-24T06:48:27.891Z"}]}]
+[00:08:46.039] Browser ERROR   Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Orders`. 

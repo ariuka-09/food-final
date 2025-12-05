@@ -13,3 +13,14 @@ export type foodInfo = {
   price: number;
   ingredients: string;
 };
+export type user = {
+  email: string;
+  role: string;
+  address: string;
+};
+export type FoodOrder = {
+  user: user[];
+  totalPrice: number;
+  foodOrderItems: Food[];
+  status: string;
+};

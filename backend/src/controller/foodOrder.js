@@ -1,13 +1,12 @@
 import { FoodOrder } from "../models/foodOrderSchema.js";
 
 export const createFoodOrder = async (req, res) => {
-  const { user, totalPrice, foodOrderItems, status } = req.body;
+  const { user, totalPrice, foodOrderItems } = req.body;
   try {
     const order = await FoodOrder.create({
       user: user,
       totalPrice: totalPrice,
       foodOrderItems: foodOrderItems,
-      status: status,
     });
     res.status(200).send({
       message: "food order has been created successfully",
@@ -22,7 +21,7 @@ export const createFoodOrder = async (req, res) => {
 };
 export const getFoodOrder = async (req, res) => {
   try {
-    const order = await FoodOrder.find();
+    const order = await FoodOrder.find().populate("user");
 
     res.status(200).send(order);
   } catch (error) {

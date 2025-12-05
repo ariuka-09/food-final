@@ -1,15 +1,5 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
@@ -33,6 +23,7 @@ export function OrderDetail(props: {
   setAddress: React.Dispatch<React.SetStateAction<string>>;
 }) {
   const { address, setAddress } = props;
+
   // const [address, setAddress] = useState("");
   useEffect(() => {
     const stored = localStorage.getItem("address");
@@ -45,24 +36,45 @@ export function OrderDetail(props: {
   const foodsFromLocalStorage = JSON.parse(
     localStorage.getItem("foods") || "[]"
   );
+  const addOrder = async () => {
+    const foods = JSON.parse(localStorage.getItem("foods") as string);
+    let totalPrice = 0;
+    if (foods) {
+      for (let i = 0; i < foods.length; i++) {
+        totalPrice += foods[i].price;
+      }
+    }
+    const token = localStorage.getItem("token") as string;
+    const user = jwtDecode(token);
+    console.log("user", user);
+    const userId = user._id;
+    axiosInstance.post(`/foodOrder`, {
+      user: userId,
+      totalPrice,
+      foodOrderItems: foods,
+    });
+    console.log("foods", localStorage.getItem("foods"));
+    localStorage.setItem("foods", "[]");
+    window.location.reload();
+  };
 
   const handleAddress = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     localStorage.setItem("address", value);
     setAddress(value);
   };
-  const addAddress = async () => {
-    const token = localStorage.getItem("token") as any;
-    const decodedToken = jwtDecode(token) as any;
-    console.log("token", decodedToken._id);
-    try {
-      const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
-        address: address,
-      });
-    } catch (error) {
-      console.log("error", error);
-    }
-  };
+  // const addAddress = async () => {
+  //   const token = localStorage.getItem("token") as any;
+  //   const decodedToken = jwtDecode(token) as any;
+  //   console.log("token", decodedToken._id);
+  //   try {
+  //     const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
+  //       address: address,
+  //     });
+  //   } catch (error) {
+  //     console.log("error", error);
+  //   }
+  // };
   return (
     <div>
       <Drawer>
@@ -97,7 +109,11 @@ export function OrderDetail(props: {
           </div>
           <DrawerFooter>
             <DrawerClose>
-              <Button variant="destructive" className="w-full">
+              <Button
+                variant="destructive"
+                className="w-full"
+                onClick={addOrder}
+              >
                 Checkout
               </Button>
             </DrawerClose>

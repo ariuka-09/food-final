@@ -20,16 +20,16 @@ import { jwtDecode } from "jwt-decode";
 export const Navbar = () => {
   const [address, setAddress] = useState("");
   const addAddress = async () => {
-    // const token = localStorage.getItem("token") as any;
-    // const decodedToken = jwtDecode(token) as any;
-    // console.log("token", decodedToken._id);
-    // try {
-    //   const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
-    //     address: address,
-    //   });
-    // } catch (error) {
-    //   console.log("error", error);
-    // }
+    const token = localStorage.getItem("token") as any;
+    const decodedToken = jwtDecode(token) as any;
+    console.log("token", decodedToken._id);
+    try {
+      const user = await axiosInstance.patch(`/user/${decodedToken._id}`, {
+        address: address,
+      });
+    } catch (error) {
+      console.log("error", error);
+    }
     localStorage.setItem("address", address);
   };
   return (
@@ -47,7 +47,10 @@ export const Navbar = () => {
       <div className="flex h-fit gap-[12.81px]">
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline" className="text-[12px] font-normal ">
+            <Button
+              variant="outline"
+              className="text-[12px] font-normal cursor-pointer"
+            >
               <span className="text-[#EF4444] ">Delivery address:</span> Add
               Location
             </Button>
@@ -88,7 +91,7 @@ export const Navbar = () => {
             <DialogFooter className="sm:justify-start"></DialogFooter>
           </DialogContent>
         </Dialog>
-        <button className="bg-[#F4F4F5] p-2 rounded-[50%]">
+        <button className="bg-[#F4F4F5] p-2 rounded-[50%] cursor-pointer">
           <OrderDetail address={address} setAddress={setAddress} />
         </button>
         <button className="bg-[#ef4444] p-2 rounded-[50%]">

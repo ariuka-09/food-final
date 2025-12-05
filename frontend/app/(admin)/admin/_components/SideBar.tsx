@@ -8,9 +8,9 @@ export function SideBar() {
   const [page, setPage] = useState("./foodmenu");
   const router = useRouter();
 
-  useEffect(() => {
-    router.push(`${page}`);
-  }, [page]);
+  // useEffect(() => {
+  //   router.push(`${page}`);
+  // }, [page]);
 
   return (
     <div className="px-5 pt-9 w-[205px] ">
@@ -42,8 +42,8 @@ export function SideBar() {
               <path
                 d="M8.25 2.75H3.66667C3.16041 2.75 2.75 3.16041 2.75 3.66667V10.0833C2.75 10.5896 3.16041 11 3.66667 11H8.25C8.75626 11 9.16667 10.5896 9.16667 10.0833V3.66667C9.16667 3.16041 8.75626 2.75 8.25 2.75Z"
                 stroke="#09090B"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M18.3333 2.75H13.75C13.2437 2.75 12.8333 3.16041 12.8333 3.66667V6.41667C12.8333 6.92293 13.2437 7.33333 13.75 7.33333H18.3333C18.8396 7.33333 19.25 6.92293 19.25 6.41667V3.66667C19.25 3.16041 18.8396 2.75 18.3333 2.75Z"
