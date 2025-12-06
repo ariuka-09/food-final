@@ -34,8 +34,12 @@ export const getFoodOrder = async (req, res) => {
 };
 export const updateFoodOrder = async (req, res) => {
   const { id } = req.params;
+  const status = req.body.status;
   try {
-    const order = await FoodOrder.findByIdAndUpdate(id, req.body);
+    const order = await FoodOrder.findByIdAndUpdate(id, { status });
+    console.log("status updated", status);
+    console.log("order id", id);
+
     res.status(200).send({
       message: "food order has been updated successfully",
       data: order,

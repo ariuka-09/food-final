@@ -19,8 +19,11 @@ export type user = {
   address: string;
 };
 export type FoodOrder = {
+  _id: string;
   user: user[];
   totalPrice: number;
   foodOrderItems: Food[];
   status: string;
+  createdAt: string;
+  updatedAt: string;
 };

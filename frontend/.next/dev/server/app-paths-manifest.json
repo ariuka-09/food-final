@@ -1,6 +1,8 @@
 {
+  "/(admin)/admin/foodmenu/page": "app/(admin)/admin/foodmenu/page.js",
   "/(admin)/admin/orders/page": "app/(admin)/admin/orders/page.js",
   "/(user)/user/signin/page": "app/(user)/user/signin/page.js",
+  "/(user)/user/signup/page": "app/(user)/user/signup/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js"
 }

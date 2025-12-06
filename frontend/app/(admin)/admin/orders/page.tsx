@@ -12,6 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { StatusButton } from "./_components/StatusButton";
 export default function Orders() {
   const [orders, setOrders] = useState<FoodOrder[]>([]);
   useEffect(() => {
@@ -20,31 +21,39 @@ export default function Orders() {
   const getOrders = async () => {
     const orders = await axiosInstance.get("foodOrder");
     console.log("orders", orders.data);
-
     setOrders(orders.data);
   };
+
+  const statusHandler = async (id: string, status: string) => {
+    await axiosInstance.patch(`foodOrder/update/${id}`, { status });
+  };
+
   return (
     <div>
       {orders &&
-        orders.map((food) => {
+        orders.map((order) => {
           // const data = jwtDecode();
           return (
             <div className="flex">
-              {food.user[0].email}
+              {order.user[0].email}
               <div>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="outline">Open</Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56">
-                    {food.foodOrderItems.map((item) => {
+                    {order.foodOrderItems.map((food) => {
                       return (
-                        <DropdownMenuItem>{item.foodName} </DropdownMenuItem>
+                        <DropdownMenuItem>{food.foodName} </DropdownMenuItem>
                       );
                     })}
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
+              {order.createdAt.split("T")[0].replace(/-/g, "/")}
+              {order.totalPrice}
+              {order.user[0].address}
+              <StatusButton order={order} />
             </div>
           );
         })}
