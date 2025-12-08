@@ -34,20 +34,39 @@ export const getFoodOrder = async (req, res) => {
 };
 export const updateFoodOrder = async (req, res) => {
   const { id } = req.params;
-  const status = req.body.status;
-  try {
-    const order = await FoodOrder.findByIdAndUpdate(id, { status });
-    console.log("status updated", status);
-    console.log("order id", id);
+  if (id != "notAnId") {
+    const status = req.body.status;
+    try {
+      const order = await FoodOrder.findByIdAndUpdate(id, { status });
+      console.log("status updated", status);
+      console.log("order id", id);
 
-    res.status(200).send({
-      message: "food order has been updated successfully",
-      data: order,
-    });
-  } catch (error) {
-    res
-      .status(500)
-      .send({ message: "problem updating food order", data: error });
+      res.status(200).send({
+        message: "food order has been updated successfully",
+        data: order,
+      });
+    } catch (error) {
+      res
+        .status(500)
+        .send({ message: "problem updating food order", data: error });
+    }
+  } else {
+    const { status, ids } = req.body;
+    try {
+      for (let i = 0; i < ids.length; i++) {
+        await FoodOrder.updateOne(
+          { _id: ids[i] },
+          { $set: { status: status } }
+        );
+      }
+      res.status(200).send({
+        message: "food orderS has been updated successfully",
+      });
+    } catch (error) {
+      res
+        .status(500)
+        .send({ message: "problem updating food order", data: error });
+    }
   }
 };
 export const deleteFoodOrder = async (req, res) => {
