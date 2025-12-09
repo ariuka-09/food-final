@@ -161,7 +161,7 @@ export default function Orders() {
                 const objectOfBoxes = { ...checkboxes };
                 setCheckboxes(objectOfBoxes);
               }}
-              checked={checkboxes.id}
+              checked={!!checkboxes[id]}
             ></Checkbox>
             {/* Email */}
             <div className="w-56 text-sm">{user?.email}</div>
